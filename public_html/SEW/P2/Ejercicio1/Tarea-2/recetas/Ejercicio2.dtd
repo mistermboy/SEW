@@ -1,0 +1,13 @@
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta  (nombre, tipo, ingredientes, calorias, pasos, tiempo, dificultad, elementosElabotación, origen)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT pasos (paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT elementosElabotación (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
