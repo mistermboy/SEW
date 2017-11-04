@@ -1,0 +1,50 @@
+body {
+      font: 400 15px Tahoma, sans-serif;
+      text-align: justify;
+      line-height: 1.8;
+      color: #818181;
+      background-color: #f6f6f6;
+      font-family: "Times New Roman", Times, serif;
+     
+  }
+
+header{
+      background-image: url("https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=0dd98227f72dd456eaa444f288255e361&authkey=AfsG0ZXpxWJBdOx1PrxPS7s&e=8f729ef16b35484a8f54ce27f71faa99");
+      padding: 100px 25px;
+      margin:0;
+}
+
+h1 {
+    background-color:transparent; 
+    color: red;
+    text-transform: uppercase;
+    padding: 0px 25px;
+    text-align: center;
+    font-weight: bold;
+    border : white;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  }
+
+p[title = "Rojo"]{
+    background-color:red; 
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+p[title = "Amarillo"]{
+    background-color:yellow; 
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+p[title = "Morado"]{
+    background-color:#A635FF; 
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+

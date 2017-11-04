@@ -3,6 +3,7 @@ body {
       line-height: 1.8;
       color: #818181;
       background-color: #f6f6f6;
+      background-image: url(https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=094556a81f86d450197dbacea2ee0bb7f&authkey=Acf3p4GAfzaiQc78McIxopE&e=281fd233d9af496ca6ba12051d7da378);
   }
 h1 {
       background-color:#2EFEF7; 
@@ -11,3 +12,9 @@ h1 {
       padding: 100px 25px;
       text-align: center;     
   }
+
+img[src = "fotoPerfil"]{
+    border-radius: 50px;
+    height: 300;
+}
+
