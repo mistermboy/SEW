@@ -1,10 +1,9 @@
 body {
-      font: 400 15px Tahoma, sans-serif;
       text-align: justify;
       line-height: 1.8;
       color: #818181;
       background-color: #f6f6f6;
-      font-family: "Times New Roman", Times, serif;
+      font-family: "SF Text",Serif;
      
   }
 
@@ -44,6 +43,14 @@ p[title = "Morado"]{
     color: black;
     text-align: center;
     font-weight: bold;
+}
+
+video{
+    width: 600px;
+}
+
+img{
+    height="300" width="300"
 }
 
 

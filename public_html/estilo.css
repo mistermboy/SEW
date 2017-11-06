@@ -2,19 +2,182 @@ body {
       font: 400 15px Tahoma, sans-serif;
       line-height: 1.8;
       color: #818181;
-      background-color: #f6f6f6;
-      background-image: url(https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=094556a81f86d450197dbacea2ee0bb7f&authkey=Acf3p4GAfzaiQc78McIxopE&e=281fd233d9af496ca6ba12051d7da378);
-  }
-h1 {
-      background-color:#2EFEF7; 
-      color: #000000;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
+      background-color: black;
+      background-image: url(https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=075bcee4785aa4936945c566fd619413b&authkey=AVgOKRVXcS9KF3oF5Bw14Lc&e=c380b145e736413988aa5d35a0464a8f);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: right;
+      
   }
 
-img[src = "fotoPerfil"]{
-    border-radius: 50px;
-    height: 300;
+
+    img.perfil{
+        margin-top: 4cm;
+        margin-left: 2cm;
+        border-radius: 50%;
+        width: 300px;
+    }
+
+
+
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: gray;
+      line-height: 2.5;
+      font-family: "SF Text",Serif;
+      color: white;
+    }
+
+
+
+    header>nav {
+      text-align: center;
+      margin-top: 1px;
+        
+    }
+
+    header>nav>a {
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    header>nav>a:hover {
+        color: #FF0ACA;
+         opacity: .80;
+    }
+
+
+
+    section {
+        margin-top: 1cm;
+        margin-left: -1cm;
+      background: black;
+      line-height: 2.5;
+      font-family: "SF Text",Serif;
+      color: white;
+    }
+
+    section>nav {
+      text-align: center;
+      margin-top: 1px;
+    }
+
+    section>nav>a{
+        margin-top: 2cm;
+        font-size: 20px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+
+    section>nav>a:hover {
+        color: #70FF8F;
+        opacity: .80;
+    }
+
+
+
+article{
+    background-color: transparent;
+    background-position: left;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    font-family: "SF Text",Serif;
+    font-size: 30px;
+    color:white;
 }
+
+
+article>p{
+    background-color: transparent;
+    background-position: left;
+    font-family: "SF Text",Serif;
+    font-size: 20px;
+    color:white;
+}
+
+article>h1{
+    background-color: transparent;
+    background-position: left;
+    font-family: "SF Text",Serif;
+    font-size: 30px;
+    color:white;
+}
+
+
+section>h1{
+    background-color: transparent;
+    background-position: center;
+    font-family: "SF Text",Serif;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+
+h1{
+    
+    margin-top: 2cm;
+    font-family: "SF Text",Serif;
+    font-size: 70px;
+    color:white;
+    background-color: transparent;
+}
+
+
+p{
+    font-weight: bold;
+    margin-left: 1cm;
+    font-family: "SF Text",Serif;
+    color:white;
+}
+
+
+
+p[title="surf"]{
+    margin-left: 3cm;
+    font-family: "SF Text",Serif;
+    font-size: 50px;
+    
+}
+
+p[title="skate"]{
+    margin-left: 3cm;
+    font-family: "SF Text",Serif;
+    font-size: 50px;
+    
+}
+
+p[title="music"]{
+    margin-left: 3cm;
+    font-family: "SF Text",Serif;
+    font-size: 50px;
+    
+}
+
+
+img.surfing{
+     width: 600px;
+    margin-left: 3cm;
+    border-radius: 10%;
+}
+
+
+video{
+     width: 600px;
+    margin-left: 3cm;
+    border-radius: 10%;
+}
+
 
