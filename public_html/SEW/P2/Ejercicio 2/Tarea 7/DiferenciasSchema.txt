@@ -1,0 +1,4 @@
+Al igual que en el Ejercicio 1, la principal diferencia a la hora de generar el Schema automáticamente frente a construirlo 
+a mano es que el generador automáticono es capaz de distinguir tipos y por defecto pone todos los tipos a string. 
+En este caso, los schemas son idénticos debido a que todos los elementos son de tipo string.
+

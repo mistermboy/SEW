@@ -1,0 +1,32 @@
+body {
+      font: 400 15px Tahoma, sans-serif;
+      line-height: 1.8;
+      background-color: black;
+  }
+
+h1 {
+      color:purple; 
+      text-align: center;     
+  }
+
+
+h2 {
+      color:green; 
+      text-align: center;     
+  }
+
+
+h3{
+    color:orange; 
+    text-align: center;     
+}
+
+h4{
+    color:red; 
+    text-align: center;     
+}
+
+p{
+    color:white; 
+    text-align: center;   
+}

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/articulos" elementFormDefault="qualified" targetNamespace="http://tempuri.org/articulos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="articulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="articulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="articulo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="título" />
+        <xs:element ref="autores" />
+        <xs:element ref="resumen" />
+        <xs:element ref="palabrasClave" />
+        <xs:element ref="nombreRevista" />
+        <xs:element ref="volumenRevista" />
+        <xs:element ref="páginaInicial" />
+        <xs:element ref="páginaFinal" />
+        <xs:element ref="año" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="título" type="xs:string" />
+  <xs:element name="autores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="correo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="correo" type="xs:string" />
+  <xs:element name="resumen" type="xs:string" />
+  <xs:element name="palabrasClave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="palabraClave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="palabraClave" type="xs:string" />
+  <xs:element name="nombreRevista" type="xs:string" />
+  <xs:element name="volumenRevista" type="xs:string" />
+  <xs:element name="páginaInicial" type="xs:integer" />
+  <xs:element name="páginaFinal" type="xs:integer" />
+  <xs:element name="año" type="xs:integer" />
+</xs:schema>

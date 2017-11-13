@@ -1,0 +1,15 @@
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo  (título, autores, resumen, palabrasClave, nombreRevista, volumenRevista, páginaInicial, páginaFinal,año)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (nombre,correo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT palabrasClave (palabraClave+)>
+<!ELEMENT palabraClave (#PCDATA)>
+<!ELEMENT nombreRevista (#PCDATA)>
+<!ELEMENT volumenRevista (#PCDATA)>
+<!ELEMENT páginaInicial (#PCDATA)>
+<!ELEMENT páginaFinal (#PCDATA)>
+<!ELEMENT año (#PCDATA)>

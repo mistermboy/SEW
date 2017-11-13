@@ -1,0 +1,12 @@
+Lenguaje de Porgramación: Java
+Versión: 1.8.0_151
+Instrucciones:
+	*Consola:
+		-Situarse en el directorio donde se encuentra el archivo "Ejercicio3-4.jar"
+		-Ejecutar la instruccion: java -jar Ejercicio3-4.jar pokemon.xml
+		-Seguir las instrucciones que se muestran por consola
+		-El xml que se genere se situará en el mismo directorio donde se encuentra el archivo "Ejercicio3-4.jar"
+		-El nombre del xml generado será "pokemons-tipo-"+ tipo seleccionado
+
+Archivos utilizados:
+	-pokemon.xml

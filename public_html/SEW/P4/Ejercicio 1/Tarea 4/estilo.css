@@ -1,0 +1,27 @@
+body {
+      font: 400 15px Tahoma,sans-serif;
+      line-height: 1.8;
+      color: white;
+      background-color: black;
+  }
+h1 {
+      background-color:#9303FF; 
+      color: #fff;
+      text-transform: uppercase;
+      padding: 100px 25px;
+      text-align: center;     
+  }
+
+h2 {
+      background-color:black; 
+      color: red;
+      text-transform: uppercase;
+      padding: 100px 25px;
+      text-align: Left;     
+  }
+
+h3 {
+      color: orange;
+      text-transform: uppercase;
+      text-align: Left;     
+  }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/recetas" elementFormDefault="qualified" targetNamespace="http://tempuri.org/recetas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recetas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="receta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="receta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="tipo" />
+        <xs:element ref="ingredientes" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="calorias" />
+        <xs:element ref="pasos" />
+        <xs:element ref="tiempo" />
+        <xs:element ref="dificultad" />
+        <xs:element ref="elementosElabotación" />
+        <xs:element ref="origen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="tipo" type="xs:string" />
+  <xs:element name="ingredientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="ingrediente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ingrediente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="cantidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="cantidad" type="xs:string" />
+  <xs:element name="calorias" type="xs:string" />
+  <xs:element name="pasos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="paso" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paso" type="xs:string" />
+  <xs:element name="tiempo" type="xs:string" />
+  <xs:element name="dificultad" type="xs:string" />
+  <xs:element name="elementosElabotación">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="elementoElabotación" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="elementoElabotación" type="xs:string" />
+  <xs:element name="origen" type="xs:string" />
+</xs:schema>

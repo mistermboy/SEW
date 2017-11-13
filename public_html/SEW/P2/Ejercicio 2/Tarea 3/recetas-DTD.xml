@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta  (nombre, tipo, ingredientes, calorias?, pasos, tiempo, dificultad, elementosElabotación, origen)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (nombre,cantidad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT pasos (paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT elementosElabotación (elementoElabotación+)>
+<!ELEMENT elementoElabotación (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+
+]>
+<recetas>
+
+	<receta> 
+		<nombre>Sepia rellena de bacalao y langostinos</nombre>
+		<tipo>Primer plato</tipo>
+		<ingredientes>
+			<ingrediente>
+					<nombre>Langostinos crudos</nombre>
+					<cantidad>300 gramos</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Filetes de bacalao fresco</nombre>
+					<cantidad>300 gramos</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Pan rallado</nombre>
+					<cantidad>100 gramos</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Peregil</nombre>
+					<cantidad>4 ramitas</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Vino Manzanilla</nombre>
+					<cantidad>1 vaso</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Sepias grandes y limpias</nombre>
+					<cantidad>4</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Patatas grandes</nombre>
+					<cantidad>4</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Ajos enteros</nombre>
+					<cantidad>3</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Cebolla</nombre>
+					<cantidad>1</cantidad>
+			</ingrediente>
+			<ingrediente>
+					<nombre>Aceite de oliva</nombre>
+					<cantidad>4 cucharadas</cantidad>
+			</ingrediente>
+		</ingredientes>
+		<calorias>499 cal/ración</calorias>
+		<pasos>
+			<paso orden="p1">Corta las alitas y los tentáculos de la sepia. Limpia bien el cuerpo de la sepia y resérvalo.Pela y corta los langostinos y el bacalao en trozos pequeños. 
+			En una sartén con un chorrito de aceite de oliva echa 2 ajos cortados a láminas junto con la cebolla cortada en trozos pequeños y deja que se dore.  
+			Añade el bacalao, los tentáculos de la sepia y los langostinos, dora unos instantes, añade el vino de Manzanilla y deja que reduzca.</paso>
+			<paso orden="p2">Echa la farsa en un cuenco, añade un poco de perejil troceado, la pastilla de Avecrem Dúo Paella de Pescado y el pan rallado, 
+			mézclalo y pon a punto de sal. Tritura con la ayuda de una batidora eléctrica 1 diente de ajo unas ramitas de perejil y un chorrito de 
+			aceite de oliva hasta que quede como una salsa verde.</paso>
+			<paso orden="p3">Pela las patatas y córtalas en rodajas finas. Échalas en el fondo de una fuente de horno con una pizca de sal y un poco de aceite de oliva. 
+			Rellena las sepias con la farsa, ponlas en la fuente de horno, encima de las patatas, échales la salsa verde por encima 
+			y cuécelas a 180ºC unos 20 minutos. Sírvelas de inmediato.</paso>
+		</pasos>
+		<tiempo>20-40 min</tiempo>
+		<dificultad>Dificil</dificultad>
+		<elementosElabotación>
+			<elementoElabotación>cazuela</elementoElabotación>
+			<elementoElabotación>bitroceramica</elementoElabotación>
+		 </elementosElabotación>
+		<origen>https://www.gallinablanca.es/recetas/</origen>
+	</receta>
+	
+	<receta> 
+			<nombre>Pollo al ajillo</nombre>
+			<tipo>Segundo plato</tipo>
+			<ingredientes>
+				<ingrediente>
+						<nombre>Pollo</nombre>
+						<cantidad>1 pequeño troceado</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Aceite de oliva</nombre>
+						<cantidad>1 chorro</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Ajo</nombre>
+						<cantidad>1 cabeza</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Oregano</nombre>
+						<cantidad>1 cucharadita</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Pimienta negra</nombre>
+						<cantidad>1 pizca</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Avecrem Caldo de Pollo</nombre>
+						<cantidad>1 pastilla</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Agua</nombre>
+						<cantidad>250 ml</cantidad>
+				</ingrediente>
+				<ingrediente>
+						<nombre>Coñac</nombre>
+						<cantidad>100 ml</cantidad>
+				</ingrediente>
+			</ingredientes>
+			<calorias>598 cal/ración</calorias>
+			<pasos>
+				<paso orden="p1">Pon los trocitos de pollo en una cacerola con aceite de oliva, dos dientes de ajo sin pelar c(on una ligera incisión en ellos) y el orégano. 
+				Deja que se vaya haciendo hasta que se dore ligeramente.</paso>
+				<paso orden="p2">En una trituradora pon el resto de los ajos, el hígado del pollo y la pimienta.
+				Cuando el pollo esté dorado, echa el triturado en la cacerola.</paso>
+				<paso orden="p3">Añade el coñac, el agua y la pastilla de Avecrem Caldo de Pollo Gallina Blanca deshecha 
+				con los dedos. Espera a que se reduzca el agua… ¡y listo!.</paso>
+			</pasos>
+			<tiempo>20-40 min</tiempo>
+			<dificultad>Medio</dificultad>
+			<elementosElabotación>
+				<elementoElabotación>sartén</elementoElabotación>
+				<elementoElabotación>bitroceramica</elementoElabotación>
+			</elementosElabotación>
+			<origen>https://www.gallinablanca.es/recetas/</origen>
+	</receta>
+
+	<receta> 
+			<nombre>Tarta de queso y cuajada</nombre>
+			<tipo>Postre</tipo>
+			<ingredientes>
+				<ingrediente>
+							<nombre>Azucar</nombre>
+							<cantidad>100 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Cuajada</nombre>
+							<cantidad>2 sobres</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Queso</nombre>
+							<cantidad>8 quesitos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Huevos</nombre>
+							<cantidad>3</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Leche</nombre>
+							<cantidad>3/4 litros</cantidad>
+				</ingrediente>
+			</ingredientes>
+			<calorias>320 cal</calorias>
+			<pasos>
+				<paso orden="p1">Verter 100 gramos de azúcar y 4 cucharadas de agua para hacer un caramelo en un molde e introducir en el microondas, 
+				durante 5-6 minutos. Cuando empiece a tomar color, retirar, mover el molde para que se caramelice y dejar reposar unos minutos.</paso>
+				<paso orden="p2">Mezclar todos los ingredientes de la tarta, batiéndolos bien hasta formar una masa homogénea</paso>
+				<paso orden="p3">Verter la masa en el molde caramelizado e introducir en el microondas, unos 12-13 minutos. 
+				Dejar reposar unos minutos. Introducirlo en el frigorífico para servirlo bien frío.</paso>
+			</pasos>
+			<tiempo>10-20 min</tiempo>
+			<dificultad>Fácil</dificultad>
+			<elementosElabotación>
+				<elementoElabotación>molde</elementoElabotación>
+				<elementoElabotación>microondas</elementoElabotación>
+			</elementosElabotación>
+			<origen>https://www.gallinablanca.es/recetas/</origen>
+	</receta>
+	
+	<receta> 
+			<nombre>Cheesecake Vegano de arándanos</nombre>
+			<tipo>Postre</tipo>
+			<ingredientes>
+				<ingrediente>
+							<nombre>Almendra</nombre>
+							<cantidad>150 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Dátiles</nombre>
+							<cantidad>3</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Aceite de coco</nombre>
+							<cantidad>60 mililitros</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Canela</nombre>
+							<cantidad>1/4 cucharadita</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Sal</nombre>
+							<cantidad>1/4 cucharadita</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Anacardos</nombre>
+							<cantidad>250 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Leche de coco</nombre>
+							<cantidad>120 ml</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Sirope de coco</nombre>
+							<cantidad>80 ml</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Zumo</nombre>
+							<cantidad>2 cucharaditas</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Vainilla</nombre>
+							<cantidad>1 cucharadita de estracto</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Arándanos</nombre>
+							<cantidad>20 gramos</cantidad>
+				</ingrediente>
+			</ingredientes>
+			<calorias>380 cal/ración</calorias>
+			<pasos>
+				<paso orden="p1">En una batidora ponemos las almendras y las trituramos, si no usamos harina de almendra. Agregamos los dátiles partidos 
+				en trocitos y trituramos todo junto.</paso>
+				<paso orden="p2">Añadimos el aceite de coco derretido, la canela y la sal; mezclamos bien. Extendemos esta masa en la base de un molde desmontable 
+				y aplanamos con una espátula o un rodillo para amasar. Metemos en la nevera para que se ponga firme.</paso>
+				<paso orden="p3">Pesamos los anacardos y los cubrimos de agua en un bol. Los dejaremos por lo menos ocho horas en remojo.</paso>
+				<paso orden="p4">Escurrimos los anacardos en un colador y los ponemos en una batidora potente. Agregamos la leche de coco, el aceite de coco, 
+				el sirope de arce y el extracto de vainilla. Trituramos a conciencia, hasta obtener una crema.</paso>
+				<paso orden="p5">Pesamos la mezcla en la báscula y la dividimos en dos partes iguales. A una le añadimos las dos cucharadas de limón y mezclamos.
+				La otra porción la devolvemos a la batidora y añadimos 125 g de arándanos frescos o 20 g de arándanos liofilizados. Trituramos de nuevo</paso>
+				<paso orden="p6">Vertemos sobre la base de la tarta la mezcla de color blanco y alisamos la superficie con una espátula o rasqueta recta. 
+				Metemos el molde en la nevera para que se ponga firme.</paso>
+				<paso orden="p7">Cuando la primera capa esté firme agregamos la mezcla con los arándanos y volvemos a alisar y a llevar a la nevera.</paso>
+				<paso orden="p8">Trituramos los arándanos junto con las semillas de chia y el limón, hasta formar una pasta. Las semillas de chia son un espesante vegetal 
+				y la mezcla enseguida empieza a tomar consistencia, aunque llegar al espesor final le lleva un rato.</paso>
+				<paso orden="p9">Vertemos la cobertura sobre la tarta y alisamos. Devolvemos el molde un rato a la nevera para que se ponga firme la cobertura, 
+				aunque también podemos congelar la tarta y servirla como tarta helada.</paso>
+			</pasos>
+			<tiempo>20-30 min</tiempo>
+			<dificultad>Fácil</dificultad>	
+			<elementosElabotación>
+				<elementoElabotación>molde</elementoElabotación>
+				<elementoElabotación>trituradora</elementoElabotación>
+			</elementosElabotación>
+			<origen>https://www.marialunarillos.com</origen>
+	</receta>
+	
+	<receta> 
+			<nombre>Sopa de miso y tofu</nombre>
+			<tipo>Primer plato</tipo>
+			<ingredientes>
+				<ingrediente>
+							<nombre>Berenjena</nombre>
+							<cantidad>1</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Zanahoria</nombre>
+							<cantidad>1</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Puerro</nombre>
+							<cantidad>1</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Apio</nombre>
+							<cantidad>1 ramita</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Nabo</nombre>
+							<cantidad>1 trozo</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Chirivía</nombre>
+							<cantidad>1 trozo</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Champiñones</nombre>
+							<cantidad>4</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Tofu</nombre>
+							<cantidad>150 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Mugi miso</nombre>
+							<cantidad>2 cucharadas</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Fideos</nombre>
+							<cantidad>20 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Aceite de sésamo</nombre>
+							<cantidad>1 cucharada</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Agua</nombre>
+							<cantidad>500 ml</cantidad>
+				</ingrediente>
+
+			</ingredientes>
+			<calorias>200 cal</calorias>
+			<pasos>
+				<paso orden="p1">Empezamos lavando, pelando y troceando las verduras en dados pequeños, rodajitas o bastones, pero procurando que el grosor sea similar.</paso>
+				<paso orden="p2">En una olla o un cazo ponemos a calentar el aceite y rehogamos las verduras durante unos 5 minutos a fuego medio, añadimos el tofu cortado en dados, 
+				mezclamos y agregamos el agua. Llevamos a ebullición y cocinamos hasta que las verduras estén tiernas a nuestro gusto. Yo lo dejo escasos 10 minutos porque me gustan al dente.</paso>
+				<paso orden="p3">En un bol aparte ponemos el miso, añadimos 2 o 3 cucharadas del caldo de las verduras y lo disolvemos bien. Apagamos el fuego, añadimos el miso disuelto a la olla, 
+				mezclamos bien y echamos los fideos vermicelli, dejamos reposar 3 minutos para que se hidraten y servimos.</paso>
+				<paso orden="p4">Como el miso aporta sal, yo no le pongo sal ni a las verduras ni al caldo, pero si os gusta la comida salada es posible que tengáis que añadir un poco más.</paso>
+			</pasos>
+			<tiempo>25 min</tiempo>
+			<dificultad>Fácil</dificultad>
+			<elementosElabotación>
+				<elementoElabotación>microondas</elementoElabotación>
+				<elementoElabotación>olla</elementoElabotación>
+				<elementoElabotación>bitrocerámica</elementoElabotación>
+			</elementosElabotación>
+			<origen>http://cocinillas.elespanol.com</origen>
+	</receta>
+	
+	<receta> 
+			<nombre>Arroz frito con verduras</nombre>
+			<tipo>Segundo plato plato</tipo>
+			<ingredientes>
+				<ingrediente>
+							<nombre>Arroz</nombre>
+							<cantidad>150 gramos</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Agua</nombre>
+							<cantidad>350 ml</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Aceite de oliva</nombre>
+							<cantidad>2 cucharadas</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Sal</nombre>
+							<cantidad>1 pizca</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Zanahoria</nombre>
+							<cantidad>1</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Cebolla</nombre>
+							<cantidad>1</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Puerro</nombre>
+							<cantidad>1 trozo</cantidad>
+				</ingrediente>
+				<ingrediente>
+							<nombre>Salsa de soja</nombre>
+							<cantidad>3 cucharadas</cantidad>
+				</ingrediente>
+			
+			</ingredientes>
+			<calorias>500 cal</calorias>
+			<pasos>
+				<paso orden="p1">En un bol apto para microondas ponemos a calentar el agua con una cucharada de aceite de oliva virgen extra y una pizca de sal, 
+				sin pasarnos porque luego la salsa de soja lo salará más. Programaremos 90 segundos a 800 W.</paso>
+				<paso orden="p2">Sacamos con cuidado de no quemarnos, echamos el arroz y cocinamos en el microondas durante 10 minutos a 800 W sin tapar.</paso>
+				<paso orden="p3">Mientras se cocina el arroz, pelamos la zanahoria, la cebolla y las troceamos finamente junto con el puerro.</paso>
+				<paso orden="p4">En una sartén de fondo grueso o un wok ponemos a calentar dos cucharadas de aceite de oliva virgen extra a fuego fuerte, añadimos 
+				las verduras troceadas y salteamos durante un par de minutos a fuego alto, no es necesario añadir sal porque luego pondremos la salsa de soja y no 
+				importa si se chamuscan un poco porque al no llevar ajo no hay problema de que amargue. Eso sí, si vemos que se empiezan a chamuscar y que aún le 
+				falta un poco al arroz bajamos el fuego.</paso>
+				<paso orden="p5">Cuando esté listo el arroz, añadimos la salsa de soja al sofrito, fuego fuerte, añadimos el arroz cocido y salteamos durante un par 
+				de minutos meneando la sartén o el wok para que se fría el arroz.</paso>
+				<paso orden="p6">Probamos y, si fuese necesario, rectificamos de sal.</paso>
+			</pasos>
+			<tiempo>20 min</tiempo>
+			<dificultad>Medio</dificultad> 
+			<elementosElabotación>
+				<elementoElabotación>sartén</elementoElabotación>
+				<elementoElabotación>wok</elementoElabotación>
+				<elementoElabotación>microondas</elementoElabotación>
+				<elementoElabotación>bitrocerámica</elementoElabotación>
+			</elementosElabotación>
+			<origen>https://www.marialunarillos.com</origen>    
+	</receta>
+
+	
+
+</recetas>

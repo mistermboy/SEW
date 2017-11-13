@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE articulos>
+<articulos>
+
+	<articulo> 
+		<título>Big Data and Health Economics: Opportunities, Challenges and Risks</título>
+		<autores>
+			<autor>
+				<nombre>Bodas-Sagi, D. J.</nombre>
+				<correo>Sagi@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>J. M. Labeaga</nombre>
+				<correo>Labeaga@gmail.com</correo>
+			</autor>		
+		</autores>
+		<resumen>Big Data offers opportunities in many fields. Healthcare is not an exception. In this paper we summarize the possibilities 
+		of Big Data and Big Data technologies to offer useful information to policy makers. In a world with tight public budgets and ageing 
+		populations we feel necessary to save costs in any production process. The use of outcomes from Big Data could be in the future a 
+		way to improve decisions at a lower cost than today. In addition to list the advantages of properly using data and technologies from
+		Big Data, we also show some challenges and risks that analysts could face. We also present an hypothetical example of the use of 
+		administrative records with health information both for diagnoses and patients.</resumen>
+		<palabrasClave>
+			<palabraClave>Big Data</palabraClave>
+			<palabraClave>e-health</palabraClave> 
+			<palabraClave>Machine Learning</palabraClave> 
+			<palabraClave>Risk</palabraClave> 
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol IV</volumenRevista>
+		<páginaInicial>47</páginaInicial>
+		<páginaFinal>52</páginaFinal>
+		<año>2018</año>
+	</articulo>
+
+	
+		<articulo> 
+		<título>Software fires detection and extinction for forest</título>
+		<autores>
+			<autor>
+				<nombre>de la Higuera, N. U. G</nombre>
+				<correo>Higuera@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>J. C. García Seco</nombre>
+				<correo>Seco@gmail.com</correo>
+			</autor>		
+		</autores>
+		<resumen>This article shows the most usual fire detection and forest extinction application technologies at present. 
+		We will see all different methods used by these applications that can be found in the Market and some examples. 
+		Also, some basic questions about the most influent parameters when a fire must be extinct are shown. Finally, 
+		after having shown all the technologies, we will build a model about an intelligent system which not only detects, 
+		but also extinguish wildfires.</resumen>
+		<palabrasClave>
+			<palabraClave>	Bayesian Network</palabraClave>
+			<palabraClave>Ontologies</palabraClave> 
+			<palabraClave>Wildfire Detection</palabraClave> 
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol I</volumenRevista>
+		<páginaInicial>37</páginaInicial>
+		<páginaFinal>42</páginaFinal>
+		<año>2008</año>
+	</articulo>
+	
+	
+	<articulo> 
+		<título>A Network Based Methodology to Reveal Patterns in Knowledge Transfer</título>
+		<autores>
+			<autor>
+				<nombre>López-Cruz, O.</nombre>
+				<correo>Cruz@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>N. N. Obregón</nombre>
+				<correo>Obregón@gmail.com</correo>
+			</autor>		
+		</autores>
+		<resumen>This paper motivates, presents and demonstrates in use a methodology based in complex network analysis 
+		to support research aimed at identification of sources in the process of knowledge transfer at the interorganizational level. 
+		The importance of this methodology is that it states a unified model to reveal knowledge sharing patterns and to compare 
+		results from multiple researches on data from different periods of time and different sectors of the economy. This methodology 
+		does not address the underlying statistical processes. To do this, national statistics departments (NSD) provide documents and 
+		tools at their websites. But this proposal provides a guide to model information inferences gathered from data processing revealing 
+		links between sources and recipients of knowledge being transferred and that the recipient detects as main source to new knowledge 
+		creation. Some national statistics departments set as objective for these surveys the characterization of innovation dynamics in firms and 
+		to analyze the use of public support instruments. From this characterization scholars conduct different researches. Measures of dimensions 
+		of the network composed by manufacturing firms and other organizations conform the base to inquiry the structure that emerges from taking 
+		ideas from other organizations to incept innovations. These two sets of data are actors of a two- mode-network. The link between two actors 
+		(network nodes, one acting as the source of the idea. The second one acting as the destination) comes from organizations or events organized 
+		by organizations that “provide” ideas to other group of firms. The resulting demonstrated design satisfies the objective of being a methodological 
+		model to identify sources in knowledge transfer of knowledge effectively used in innovation.</resumen>
+		<palabrasClave>
+			<palabraClave>Information Technology</palabraClave>
+			<palabraClave>Knowledge Management</palabraClave> 
+			<palabraClave>Network</palabraClave> 
+			<palabraClave>Socialt</palabraClave> 
+			<palabraClave>Technology Management</palabraClave> 
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol III</volumenRevista>
+		<páginaInicial>67</páginaInicial>
+		<páginaFinal>76</páginaFinal>
+		<año>2015</año>
+	</articulo>
+	
+	
+	<articulo> 
+		<título>A Hybrid Algorithm for Recognizing the Position of Ezafe Constructions in Persian Texts</título>
+		<autores>
+			<autor>
+				<nombre>Noferesti, S.</nombre>
+				<correo>Noferesti@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>M. Shamsfard</nombre>
+				<correo>Shamsfard@gmail.com</correo>
+			</autor>		
+		</autores>
+		<resumen>TIn the Persian language, an Ezafe construction is a linking element which joins the head of a phrase to its modifiers. 
+		The Ezafe in its simplest form is pronounced as –e, but generally not indicated in writing. Determining the position of an Ezafe is 
+		advantageous for disambiguating the boundary of the syntactic phrases which is a fundamental task in most natural language 
+		processing applications. This paper introduces a framework for combining genetic algorithms with rule-based models that brings 
+		the advantages of both approaches and overcomes their problems. This framework was used for recognizing the position of Ezafe 
+		constructions in Persian written texts. At the first stage, the rule-based model was applied to tag some tokens of an input sentence. 
+		Then, in the second stage, the search capabilities of the genetic algorithm were used to assign the Ezafe tag to untagged tokens using 
+		the previously captured training information. The proposed framework was evaluated on Peykareh corpus and it achieved 95.26 percent 
+		accuracy. Test results show that this proposed approach outperformed other approaches for recognizing the position of Ezafe constructions.</resumen>
+		<palabrasClave>
+			<palabraClave>Ezafe</palabraClave>
+			<palabraClave>Genetic Algorithms</palabraClave> 
+			<palabraClave>Rule Based Scripts</palabraClave> 
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol II</volumenRevista>
+		<páginaInicial>17</páginaInicial>
+		<páginaFinal>25</páginaFinal>
+		<año>2014</año>
+	</articulo>
+	
+	
+	<articulo> 
+		<título>Application of Multiobjective Evolutionary Techniques for Robust Portfolio Optimization</título>
+		<autores>
+			<autor>
+				<nombre>Garcia-Rodriguez, S.</nombre>
+				<correo>Rodriguez@gmail.com</correo>
+			</autor>
+		</autores>
+		<resumen>On December 20 of 2012 Sandra García Rodríguez defended his PhD at Carlos III of Madrid (Spain), called: 
+		“Application of Multiobjective Techniques for Robust Portfolio Optimization”. This thesis was supervised by Dr. David Quintana 
+		Montero and Dr. Inés M. Galván León. The defense was done in a publicly open presentation held at Carlos III University of Madrid. 
+		The PhD was approved, with the highest rating Cum Laude, by the examining committee: Dr. José Manuel Molina López,	Dr. Antonio 
+		Gaspar Lopes da Cunha and Dr. David Camacho Fernández.</resumen>
+		<palabrasClave>
+			<palabraClave>Artificial Intelligence</palabraClave>
+			<palabraClave>Evolutionary Algorithm</palabraClave> 
+			<palabraClave>Optimization</palabraClave> 
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol II</volumenRevista>
+		<páginaInicial>63</páginaInicial>
+		<páginaFinal>64</páginaFinal>
+		<año>2013</año>
+	</articulo>
+	
+	
+	<articulo> 
+		<título>Prospecting the future with AI</título>
+		<autores>
+			<autor>
+				<nombre>Castillo, J. M.</nombre>
+				<correo>Castillo@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>C. Cortes</nombre>
+				<correo>Cortes@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>J. Gonzalez</nombre>
+				<correo>Gonzalez@gmail.com</correo>
+			</autor>
+			<autor>
+				<nombre>A. Benito</nombre>
+				<correo>Benito@gmail.com</correo>
+			</autor>
+		</autores>
+		<resumen>If we were able to foresee the future, we could be prepared to reduce the impact of bad situations as well as getting the most of profiting periods. 
+		Our world is a dynamic system that evolves as time goes by. The number of variables that can influence in future situations outnumbers our capacity 
+		of prediction at a first glance. This article will show an alternative way to foresee potential future scenarios based on human experts’ opinion, 
+		what can be considered as a knowledge modeling tool.</resumen>
+		<palabrasClave>
+			<palabraClave>Multi-Agent Systems</palabraClave>
+			<palabraClave> Prevention</palabraClave> 
+			<palabraClave>Prospective</palabraClave>
+			<palabraClave>Scenarios</palabraClave> 			
+		</palabrasClave>
+		<nombreRevista>International Journal of Interactive Multimedia and Artifical Intelligence</nombreRevista>
+		<volumenRevista>Vol I</volumenRevista>
+		<páginaInicial>1</páginaInicial>
+		<páginaFinal>5</páginaFinal>
+		<año>2009</año>
+	</articulo>
+	
+	
+	
+	
+	
+</articulos>
