@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>jQuery-recorrer-DOM</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+footer{
+       margin-top:2em;
+    }
+footer a img{
+        height=31px; 
+        width=88px;
+    }
+</style>
+</head>
+<body>
+<h1>jQuery-recorrer-DOM</h1>   
+<h2>each(): Ejecuta una función de cada elemento emparejado</h2>
+<h2>parent(): Devuelve el elemento padre directo</h2>
+<p>Ejemplo desarrollado por <a href="http://di002.edv.uniovi.es/~cueva/">Juan Manuel Cueva Lovelle</a></p>
+<p>Departamento de Informática. Universidad de Oviedo</p>
+<script>
+$("*", document.body).each(function() {
+    var etiquetaPadre = $(this).parent().get(0).tagName;
+    $(this).prepend(document.createTextNode( "Etiqueta padre : <"  + etiquetaPadre + "> elemento : <" + $(this).get(0).tagName +"> valor: "));
+});
+</script>   
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"/></a>
+</footer>
+</body>
+</html>

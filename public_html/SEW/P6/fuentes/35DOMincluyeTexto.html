@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Añade texto</title>
+<script>
+function AñadirTexto() {
+if (!document.getElementById) return;
+var nuevaFrase = document.formulario.campoFrase.value;
+var nodo = document.createTextNode(" " + nuevaFrase+".");
+document.getElementById("p1").appendChild(nodo);
+document.formulario.campoFrase.value="";
+}
+</script>
+</head>
+<body>
+<h1>Añadir frases al siguiente párrafo</h1>
+<p id="p1">Con el DOM del W3C se pueden añadir frases a este párrafo.</p>
+<form name="formulario">
+<input type="text" name="campoFrase" size="65">
+<input type="button" value="Añadir" onClick="AñadirTexto();">
+</form>
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

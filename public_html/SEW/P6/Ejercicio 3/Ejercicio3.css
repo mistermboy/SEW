@@ -1,32 +1,127 @@
-body {
-      font: 400 15px Tahoma, sans-serif;
-      line-height: 1.8;
-      background-color: black;
-  }
+    body {
+          font: 400 15px Tahoma, sans-serif;
+          line-height: 1.8;
+          background-color: white;
+          text-align:center;
+          margin: auto;
+      }
 
-h1 {
-      color:purple; 
-      text-align: center;     
-  }
+    h1 {
+          color:purple; 
+          text-align: center;
+          font-size: 50px;
 
-
-h2 {
-      color:green; 
-      text-align: center;     
-  }
+      }
 
 
-h3{
-    color:orange; 
-    text-align: center;     
-}
+    input[type=Button] {
+        background-color: #B3B4B5;
+        color: white;
+        padding: 16px 32px;
+        font-size: 16px;
+        min-width: 21%;
+        text-decoration: none;
+        text-align:center;
+        border-style: solid;
+        border-color: white;
+        margin: 4px 4px;
+        cursor: pointer;  
+        border-radius: 10%;
 
-h4{
-    color:red; 
-    text-align: center;     
-}
+    }
 
-p{
-    color:white; 
-    text-align: center;   
-}
+
+    input[type=ButtonMemory] {
+        background-color: #535454;
+        color: white;
+        padding: 16px 25px;
+        font-size: 16px;
+        max-width: 10%;
+        text-decoration: none;
+        text-align:center;
+        border-style: solid;
+        border-color: white;
+        margin: 4px 4px;
+        cursor: pointer;  
+        border-radius: 10%;
+
+    }
+
+
+    input[type=ButtonOperator] {
+        background-color: #E83154;
+        color: white;
+        padding: 14px 20px;
+        font-size: 16px;
+
+        max-width: 10%;
+        text-decoration: none;
+        text-align:center;
+        border-style: solid;
+        border-color: white;
+        margin: 4px 4px;
+        cursor: pointer;  
+        border-radius: 10%;
+
+    }
+
+    input[type=ButtonCalc] {
+        background-color: #B3B4B5;
+        color: white;
+        padding: 14px 20px;
+        font-size: 16px;
+
+        max-width: 10%;
+        text-decoration: none;
+        text-align:center;
+        border-style: solid;
+        border-color: white;
+        margin: 4px 4px;
+        cursor: pointer;  
+        border-radius: 10%;
+
+    }
+
+
+    input[type=text] { 
+        background: #86F292;
+        color: black;
+        font-size: 30px;
+        text-align: right;
+        border-radius: 10px;
+        padding: 16px 32px;
+        margin: 7px;
+    }
+
+
+    input[type=Button]:hover {
+    background-color: #7BC8FF; 
+    }
+
+    input[type=ButtonOperator]:hover {
+        background-color: #7BC8FF;
+        color: black;
+    }
+
+    input[type=ButtonMemory]:hover {
+        background-color: #7BC8FF;
+        color: black;
+    } 
+
+    input[type=ButtonCalc]:hover {
+        background-color: #7BC8FF; 
+    }   
+
+
+
+
+    form{
+      max-width: 500px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      margin: auto;
+      background: black;
+      border-radius: 10%;    
+    }
+
+

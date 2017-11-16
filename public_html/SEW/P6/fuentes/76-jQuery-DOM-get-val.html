@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DOM-get-val</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function verNombre() {
+    alert("Valor del campo Nombre: " + $("#campoNombre").val());       
+}
+function verApellidos() {
+    alert( "Valor del campo Apellidos: " + $("#campoApellidos").val());
+}
+</script>
+<style>
+footer{
+       margin-top:2em;
+    }
+footer a img{
+        height=31px; 
+        width=88px;
+    }
+</style>
+</head>
+<body>
+<h1>jQuery-DOM: Ejemplo de manipulación de elementos del árbol DOM - get-val()</h1>   
+<h2>val(): Establece (set) o devuelve (get) el valor contenido en un campo de un formulario</h2>   
+<p>Ejemplo desarrollado por Juan Manuel Cueva Lovelle. Departamento de Informática. Universidad de Oviedo</p>
+    
+<p>Nombre: <input type="text" id="campoNombre" value="Juan Manuel"></p>
+<p>Apellidos: <input type="text" id="campoApellidos" value="Cueva Lovelle"></p>
+    
+<input type="button" id="botonNombre" Value="Nombre" onclick="verNombre()" />
+<input type="button" id="botonApellidos" Value="Apellidos" onclick="verApellidos()"/>
+    
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"/></a>
+</footer>
+</body>
+</html>

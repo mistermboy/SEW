@@ -1,0 +1,25 @@
+/* 74-InfoNavegador.css */
+/* Version 1.0. 04/11/2017. Juan Manuel Cueva Lovelle. Universidad de Oviedo */
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:red;
+}
+h2{
+    text-align:center;
+    color:green;
+}
+h3{
+    text-align:center;
+    color:blue;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+p{
+    color:gray;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Uso de Clases</title>
+</head>
+<body>
+<h1>ECMAScript 6.0: Ejemplo de uso de clases</h1>   
+<script>
+"use strict";
+class Perro {
+    constructor (nombre){
+        this.nombre=nombre;
+    }
+    ladra(){
+        document.write("<p>"+this.nombre+" dice guau </p>");
+    }
+}
+var tom = new Perro("Tom");
+tom.ladra();
+</script>      
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

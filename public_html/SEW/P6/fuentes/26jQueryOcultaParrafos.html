@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+  <title>Oculta párrafos</title>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   $("button").click(function(){
+     $("p").hide();
+   });
+ });
+ </script>
+</head>
+ 
+<body>
+ <h1>Primer programa con jQuery</h1>
+ <h2>Ilustra el acceso a elementos HTML</h2>
+ <p>Esto es el primer párrafo.</p>
+ <p>y esto el segundo párrafo.</p>
+ <button>Oculta los párrafos</button>
+ <p></p>
+    <footer>
+	<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+    </footer>
+</body>
+</html>

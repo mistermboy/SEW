@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Operador ternario</title>
+<script>
+function comprobar() {
+    var edad, texto;
+
+    // Toma el valor del campo deentrada con el id="edad"
+    edad = document.getElementById("valor").value;
+
+    // Si edad no es un número o su valor no está entre 1 y 125
+    if (isNaN(edad) || edad < 1 || edad > 125) {
+        texto = "Entrada no válida";
+    } else {
+        texto = (edad < 18) ? "Menor de edad" : "Mayor de edad";
+    }
+    document.getElementById("resultado").innerHTML = texto;
+}   
+</script>
+</head>
+<body>
+<h1>Validación de edad</h1>
+
+<p>Por favor introduzca su edad</p>
+
+<input id="valor" type="number">
+
+<button type="button" onclick="comprobar()">Aceptar</button>
+
+<p id="resultado"></p>
+
+<footer>
+  <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ocultando y mostrando elementos</title>
+<script>
+function OcultarMostrar() {
+if (!document.getElementById) return;
+var cabecera1 = document.getElementById("cabecera1");
+var cabecera2 = document.getElementById("cabecera2");
+var verCabecera1 = document.formulario.cabecera1.checked;
+var verCabecera2 = document.formulario.cabecera2.checked;
+cabecera1.style.visibility=(verCabecera1) ? "visible" : "hidden";
+cabecera2.style.visibility=(verCabecera2) ? "visible" : "hidden";
+}
+</script>
+</head>
+<body>
+<h1 id="cabecera1">Esta es la cabecera 1</h1>
+<h1 id="cabecera2">Esta es la cabecera 2</h1>
+<p>Se pueden ocultar y mostrar las cabeceras usando las casillas de verificación</p>
+<form name="formulario">
+<input type="checkbox" name="cabecera1" checked onClick="OcultarMostrar();"> Mostrar cabecera 1<br/>
+<input type="checkbox" name="cabecera2" checked onClick="OcultarMostrar();"> Mostrar cabecera 2<br/>
+</form>
+<footer>
+    <p></p>
+	<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a></footer>
+</body>
+</html>

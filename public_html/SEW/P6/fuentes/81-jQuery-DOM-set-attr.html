@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DOM-set-attr</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#boton1").click(function(){
+        alert("Atributos de h1 : id = " + $("h1").attr("id") 
+              + "\n" + "Atributos de h2 : id = " + $("h2").attr("id") 
+              + "\n" + "Atributos de p : id = " + $("p").attr("id")
+              + "\n" + "Atributos de web : href = " + $("#web").attr("href") 
+             ); 
+    });
+    $("#boton2").click(function(){
+        $("h1").attr("id", "cabecera1");
+        $("h2").attr("id","cabecera2");
+        $("p").attr("id", "fragmentoTexto1");
+        $("#web").attr("href","http://di002.edv.uniovi.es/~cris/");
+        alert("Atributos modificados" 
+              + "\n" + "Atributos de h1 : id = " + $("h1").attr("id") 
+              + "\n" + "Atributos de h2 : id = " + $("h2").attr("id") 
+              + "\n" + "Atributos de p : id = " + $("p").attr("id")
+              + "\n" + "Atributos de web : href = " + $("#web").attr("href")
+             ); 
+    });
+    $("#boton3").click(function(){
+        $("h1").attr("id", "titulo1");
+        $("h2").attr("id","titulo2");
+        $("p").attr("id", "parrafo1");
+        $("#web").attr("href","http://di002.edv.uniovi.es/~cueva/");
+        alert("Atributos iniciales"
+              + "\n" + "Atributos de h1 : id = " + $("h1").attr("id") 
+              + "\n" + "Atributos de h2 : id = " + $("h2").attr("id") 
+              + "\n" + "Atributos de p : id = " + $("p").attr("id")
+              + "\n" + "Atributos de web : href = " + $("#web").attr("href")
+             );
+    });
+});
+</script>
+<style>
+footer{
+       margin-top:2em;
+    }
+footer a img{
+        height=31px; 
+        width=88px;
+    }
+</style>
+</head>
+<body>
+<h1 id="titulo1">jQuery-DOM: Ejemplo de manipulación de elementos del árbol DOM - set-attr()</h1>   
+<h2 id="titulo2">attr(): Establece (set) o devuelve (get) atributos (value) de los elementos seleccionados</h2>   
+<p id="parrafo1">Ejemplo desarrollado por <a href="http://di002.edv.uniovi.es/~cueva/" id="web">Juan Manuel Cueva Lovelle</a>. Departamento de Informática. Universidad de Oviedo</p>
+
+<button id="boton1">Ver atrributos</button>
+<button id="boton2">Cambiar atrributos</button>
+<button id="boton3">Volver a los atributos iniciales</button>
+    
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"/></a>
+</footer>
+</body>
+</html>

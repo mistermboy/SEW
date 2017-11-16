@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Intercambio imagenes</title>
+<script>
+function cambiarImagen() {
+    var imagen = document.getElementById('miBombilla');
+    if (imagen.src.match("bombillaON")) {
+        imagen.src = "bombillaOFF.gif";
+    } else {
+        imagen.src = "bombillaON.gif";
+    }
+}
+</script>
+</head>
+<body>
+<h1>Intercambio de imágenes</h1>
+
+<img id="miBombilla" onclick="cambiarImagen()" src="bombillaOFF.gif" alt="bombilla" width="100" height="180">
+
+<p>Haga clic en la bombilla para encenderla o apagarla</p>
+
+
+<footer>
+  <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

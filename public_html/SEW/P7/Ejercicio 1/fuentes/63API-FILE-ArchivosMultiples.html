@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Varios archivos</title>
+<script>
+if (window.File && window.FileReader && window.FileList && window.Blob) 
+ {  
+     //El navegador soporta el API File
+     document.write("<p>Este navegador soporta el API File </p>");
+ }
+    else document.write("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
+    
+function calcularTamañoArchivos() {
+  var nBytes = 0,
+      archivos = document.getElementById("subirArchivos").files,
+      nArchivos = archivos.length;
+  for (var i = 0; i < nArchivos; i++) {
+    nBytes += archivos[i].size;
+  }
+  var nombresTiposTamaños="";
+  for (var i = 0; i < nArchivos; i++) {
+    nombresTiposTamaños += "<p>Archivo[" + i +"] = "+ archivos[i].name  + " Tamaño: " + archivos[i].size +" bytes " + " Tipo: " + archivos[i].type+"</p>" ;
+  }
+  
+  document.getElementById("numero").innerHTML = nArchivos;
+  document.getElementById("tamaño").innerHTML = nBytes + " bytes";
+  document.getElementById("nombres").innerHTML = nombresTiposTamaños;
+}
+</script>
+</head>
+<body onload="calcularTamañoArchivos();">
+<p>API File: Selecionar varios archivos de la máquina cliente</p>
+<p><input id="subirArchivos" type="file" name="Archivos" onchange="calcularTamañoArchivos();" multiple></p>
+<p>Archivos seleccionados: <span id="numero">0</span></p>
+<p>Tamaño total: <span id="tamaño">0</span></p>
+<span id="nombres"></span>
+<footer>
+  <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

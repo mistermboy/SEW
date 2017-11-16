@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objetos con JSON</title>
+</head>
+
+<body>
+ <h1> Creación de objetos usando JSON</h1> 
+ <div id="listaUsuarios"></div>
+ <script>
+ var lista = {"usuarios":[
+        {
+            "nombre":"Juan Manuel",
+            "apellidos":"Cueva Lovelle",
+            "nacimiento": {
+                "dia":29,
+                "mes":"Marzo",
+                "año":1958
+            }
+        },
+        {
+            "nombre":"Cristina",
+            "apellidos":"García Solana",
+            "nacimiento": {
+                "dia":5,
+                "mes":"Mayo",
+                "año":1971  
+            }
+        }
+]};
+var output="<ul>";
+for (var i in lista.usuarios) {
+     output+="<li>" + lista.usuarios[i].nombre + " " + lista.usuarios[i].apellidos + " - " + lista.usuarios[i].nacimiento.dia+"/"+lista.usuarios[i].nacimiento.mes+"/"+lista.usuarios[i].nacimiento.año+"</li>";
+}
+output+="</ul>";
+document.getElementById("listaUsuarios").innerHTML=output;
+</script>
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>
+

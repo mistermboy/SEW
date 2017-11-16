@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DOM-add-elementos</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#boton1").click(function(){
+        $("#append").append(". Ejemplo de uso de append() ");
+    });
+    $("#boton2").click(function(){
+        $("#prepend").prepend(". Ejemplo de uso de prepend() ");
+    });
+    $("#boton3").click(function(){
+        $("#after").after("<h2>. Ejemplo de uso de after()</h2>");
+    });
+    $("#boton4").click(function(){
+        $("#before").before("<p>. Ejemplo de uso de before()</p>");
+    });
+    $("#boton5").click(function(){
+        $("#append").remove();
+    });
+    $("#boton6").click(function(){
+        $("h2").remove();
+    });
+    $("#boton7").click(function(){
+        var miTitulo2 = "<h2>Nuevo Título 2 creado</h2>";     // Crea texto con HTML
+        var miTitulo3 = $("<h3></h3>").text("Nuevo Título 3 creado");  // Crea un elemento con jQuery
+        var miParrafo = document.createElement("p");
+        miParrafo.innerHTML = "Mi párrafo creado"; // Crea un elemento con DOM
+        $("p").before(miTitulo2);
+        $("p").before(miTitulo3);
+        $("p").append(miParrafo); // Añade los nuevos elementos
+    });
+});
+</script>
+<style>
+footer{
+       margin-top:2em;
+    }
+footer a img{
+        height=31px; 
+        width=88px;
+    }
+</style>
+</head>
+<body>
+<h1 id="titulo1">jQuery-DOM: Ejemplo de manipulación de elementos del árbol DOM - añadir elementos - eliminar elementos</h1>   
+<h2 id="append">append(): Inserta contenidos al final de los elementos seleccionados</h2>
+<h2 id="prepend">prepend(): Inserta contenido en el inicio de los elementos seleccionados</h2>
+<h2 id="after">after(): Inserta contenido después de los elementos seleccionados</h2>
+<h2 id="before">before(): Inserta contenido antes de los elementos seleccionados</h2>
+<h2 id="remove">remove(): Elimina los elementos seleccionados (y sus descendientes)</h2>
+<p id="parrafo1">Ejemplo desarrollado por <a href="http://di002.edv.uniovi.es/~cueva/" id="web">Juan Manuel Cueva Lovelle</a>. Departamento de Informática. Universidad de Oviedo</p>
+
+<button id="boton1">Añadir elementos con append()</button>
+<button id="boton2">Añadir elementos con prepend()</button>
+<button id="boton3">Añadir elementos con after()</button>
+<button id="boton4">Añadir elementos con before()</button>
+<button id="boton5">Eliminar h2 con id="append"</button>
+<button id="boton6">Eliminar todos los h2</button>
+<button id="boton7">Crear elementos</button>
+    
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"/></a>
+</footer>
+</body>
+</html>
