@@ -69,7 +69,7 @@ class Calculadora {
     
             showMemory(){
                 document.getElementById('salida').value = this.memory;
-                this.expresion="";
+                this.expresion=this.memory;
             }
             
         
