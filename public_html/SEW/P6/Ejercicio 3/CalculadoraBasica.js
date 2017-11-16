@@ -19,6 +19,21 @@ class Calculadora {
             }
     
             writeOperator(operator){
+                if(document.getElementById('salida').value!=""){
+                    if(this.operator == 0){
+                        this.expresion += operator;
+                        document.getElementById('salida').value = this.expresion;
+                        this.operator=1;
+                    }else if(this.operator == 2) {
+                        document.getElementById('salida').value = eval(this.expresion)+operator;
+                        this.expresion=document.getElementById('salida').value;
+                        this.operator=1;
+                    }
+                }
+            }
+    
+    
+            writeOperatorSign(operator){
                 if(this.operator == 0){
                     this.expresion += operator;
                     document.getElementById('salida').value = this.expresion;

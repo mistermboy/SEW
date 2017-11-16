@@ -31,7 +31,7 @@
     }
 
 
-    input[type=ButtonMemory] {
+    input.btnMemory {
         background-color: #535454;
         color: white;
         padding: 16px 25px;
@@ -48,7 +48,7 @@
     }
 
 
-    input[type=ButtonOperator] {
+    input.btnOperator {
         background-color: #E83154;
         color: white;
         padding: 14px 20px;
@@ -65,7 +65,7 @@
 
     }
 
-    input[type=ButtonCalc] {
+    input.btnCalc {
         background-color: #B3B4B5;
         color: white;
         padding: 14px 20px;
@@ -98,21 +98,7 @@
     background-color: #7BC8FF; 
     }
 
-    input[type=ButtonOperator]:hover {
-        background-color: #7BC8FF;
-        color: black;
-    }
-
-    input[type=ButtonMemory]:hover {
-        background-color: #7BC8FF;
-        color: black;
-    } 
-
-    input[type=ButtonCalc]:hover {
-        background-color: #7BC8FF; 
-    }   
-
-
+   
 
 
     form{
