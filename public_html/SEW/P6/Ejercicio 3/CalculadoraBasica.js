@@ -8,12 +8,16 @@ class Calculadora {
                 this.expresion="";
                 this.memory=0;
                 this.operator=0;
+                this.clean=0;
             }
 
             write(number){
                 if(this.operator!=0){
                     this.operator = 2;
+                }else if(this.clean==1){
+                   this.expresion="";
                 }
+                this.clean=0;
                 this.expresion += number;
                 document.getElementById('salida').value = this.expresion;
                 
@@ -39,7 +43,11 @@ class Calculadora {
                     this.expresion += operator;
                     document.getElementById('salida').value = this.expresion;
                     this.operator=1;
-                }else if(this.operator == 2) {
+                }else if(this.operator == 1) {
+                    this.expresion=this.expresion.slice(0,-1)+operator;
+                    document.getElementById('salida').value = this.expresion;
+                }
+                else if(this.operator == 2) {
                     document.getElementById('salida').value = eval(this.expresion)+operator;
                     this.expresion=document.getElementById('salida').value;
                     this.operator=1;
@@ -48,12 +56,13 @@ class Calculadora {
             
     
             calc(){
-                document.getElementById('salida').value = eval(this.expresion);
-                this.expresion="";
+                this.expresion=eval(this.expresion);
+                document.getElementById('salida').value = this.expresion;
+                this.clean=1;
                 this.operator=0;
             }
     
-            clean(){
+           removeAll(){
                 this.expresion="";
                 this.operator=0;
                 document.getElementById('salida').value = this.expresion;
