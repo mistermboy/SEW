@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Manejo de excepciones</title>
+<script>
+function evaluar() {
+    var x;
+    x = document.getElementById("expresion").value;
+    try { 
+        document.getElementById("resultado").value = eval(x);
+    }
+    catch(err) {
+         document.getElementById("resultado").value = "Error = " + err;
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>Manejo de excepciones</h1>
+<input type="text" id="expresion" />
+<input type="button" value="evaluar" onclick="evaluar()" />
+<input type="text" id="resultado" disabled />
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

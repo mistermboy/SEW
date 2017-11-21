@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Objetos anónimos</title>
+</head>
+<body>
+<h1>Objetos anónimos</h1>   
+<script>
+var f= function(objeto) {
+    document.write("<p>"+objeto.nombre+"</p>");
+    }
+f({nombre:"Objeto anónimo"}); /* Objeto anónimo */
+f({}); /* Objeto no definido */
+</script>    
+<h1>Objetos con nombre</h1>    
+<script>
+var yo = {nombre:"Juan Manuel"}; /* Objeto con nombre */
+f(yo);
+</script>      
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ordenar Array</title>
+<script type="text/javascript">
+
+var cadenasTexto = new Array();
+
+function AddTexto(){
+laCadena = document.formulario.campoCadenaTexto.value; //Toma laCadena del campo de texto
+cadenasTexto.push(laCadena); //añade laCadena al final del array 
+cadenasTexto.sort(); //Ordena el array
+document.formulario.areaCadenasOrdenadas.value=cadenasTexto.join("\n");
+}
+</script>
+</head>
+<body>
+<h1>Ordena arrays</h1>
+<p>Introduzca cadenas de caracteres en el campo de texto siguiente, pulse el botón añadir y aparecerán ordenadas en el área de texto</p>
+<form name="formulario">
+<p> Cadena de texto:
+<input type="text" name="campoCadenaTexto" size="65">
+<input type="button" value="Añadir" onClick="AddTexto();">
+</p>
+<h2>Cadenas de texto ordenadas</h2>
+<textarea cols="80" rows="10" name="areaCadenasOrdenadas">
+</textarea>
+</form>
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>

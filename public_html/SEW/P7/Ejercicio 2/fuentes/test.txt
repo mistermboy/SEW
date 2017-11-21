@@ -1,0 +1,4 @@
+﻿<h2>¡¡¡  jQuery y AJAX funcionan leyendo texto !!!</h2>
+<p id="p1">Esto es el primer párrafo.</p>
+<p id="p2">Esto es el segundo párrafo.</p>
+<p id="p3">Esto es el tercer párrafo.</p>
