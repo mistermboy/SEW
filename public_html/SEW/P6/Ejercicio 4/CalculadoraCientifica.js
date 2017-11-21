@@ -92,6 +92,7 @@ class CalculadoraCientifica extends Calculadora{
             constructor(){
                 super();
                 this.howLong=0;
+                this.isPi=0;
             }
             
             
@@ -103,12 +104,17 @@ class CalculadoraCientifica extends Calculadora{
                       this.stack=this.expresion;
                       this.howLong=0;
                  }
-                this.clean=0;
-                this.expresion += number;
-                document.getElementById('salida').value = this.expresion;
-                this.operator = 0;
-                this.howLong++;
-                
+                 this.clean=0;            
+                 this.expresion += number;
+                 document.getElementById('salida').value = this.expresion;
+                 this.operator = 0;
+                 if(number=="Math.PI"){
+                     this.howLong+=7;
+                     this.isPi=1;
+                 }else{
+                      this.howLong++;
+                      this.isPi=0;
+                 }  
                 
             }
             
@@ -120,6 +126,7 @@ class CalculadoraCientifica extends Calculadora{
                         document.getElementById('salida').value = this.expresion;
                         this.operator=1;
                         this.clean=0;
+                        this.isPi=0;
                     }
                 }
              }
@@ -164,9 +171,16 @@ class CalculadoraCientifica extends Calculadora{
                     this.operator=0;
                     this.howLong++;
                 }
-                this.expresion=this.expresion.slice(0,-1);
-                document.getElementById('salida').value = this.expresion;
-                this.howLong--;
+                if(this.isPi==1){
+                    this.expresion=this.expresion.slice(0,-7);
+                    document.getElementById('salida').value = this.expresion;
+                    this.howLong-=7;
+                }else{
+                    this.expresion=this.expresion.slice(0,-1);
+                    document.getElementById('salida').value = this.expresion;
+                    this.howLong--;
+                }
+                
             }
     
               
