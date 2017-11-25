@@ -28,16 +28,16 @@
         
     
     <br>
-    <input type="Button" class="btnMemory" name="btnMC" value=" MS " >
+    <input type="Button" class="btnMemory" name="btnMC" value=" MS " onclick="p.clearMemory()" >
     <input type="Button" class="btnMemory" name="btnMR" value=" MR " onclick="p.showMemory()">
     <input type="Button" class="btnMemory" name="btnMMenos" value=" M- " onclick="p.subtractMemory()">
     <input type="Button" class="btnMemory" name="btnMMas" value=" M+ " onclick="p.sumMemory()">
-    <input type="Button" class="btnMemory" name="btnMS" value=" MS " >    
+    <input type="Button" class="btnMemory" name="btnMS" value=" MS " onclick="p.replaceMemory()" >    
     
     
     <br>
     <input type="Button" class="btnExpresion" name="btnElevate2" value=" x^2 " onclick="p.calcExpresion('x^2')">
-    <input type="Button" class="btnExpresion" name="btnElevatey" value=" x^y ">
+    <input type="Button" class="btnExpresion" name="btnElevatey" value=" x^y " onclick="p.writeOperator('**')">
     <input type="Button" class="btnExpresion" name="btnSin" value=" sin "  onclick="p.calcExpresion('sin')">
     <input type="Button" class="btnExpresion" name="btnCos" value=" cos "  onclick="p.calcExpresion('cos')">    
     <input type="Button" class="btnExpresion" name="btnTan" value=" tan "  onclick="p.calcExpresion('tan')">     
@@ -46,12 +46,12 @@
     <input type="Button" class="btnExpresion" name="btnRoot" value=" √ " onclick="p.calcExpresion('√')">
     <input type="Button" class="btnExpresion" name="btnPower10" value=" 10^ " onclick="p.calcExpresion('10^')">
     <input type="Button" class="btnExpresion" name="btnLog" value=" log " onclick="p.calcExpresion('log')" >
-    <input type="Button" class="btnExpresion" name="btnExp" value=" Exp "  >    
-    <input type="Button" class="btnExpresion" name="btnMod" value=" Mod ">    
+    <input type="Button" class="btnExpresion" name="btnExp" value=" Exp " onclick="p.writeExpo()"  >    
+    <input type="Button" class="btnExpresion" name="btnMod" value=" Mod " onclick="p.writeOperator('%')">    
         
         
     <br>
-    <input type="Button" class="btnExpresion" name="btnElevate" value=" ↑ ">
+    <input type="Button" class="btnExpresion" name="btnElevate" value="   " disabled>
     <input type="Button" class="btnExpresion" name="btnCE" value=" CE " onclick="p.cleanCE()">
     <input type="Button" class="btnExpresion" name="btnC" value=" C " onclick="p.removeAll()" >
     <input type="Button" class="btnExpresion" name="btnErase" value=" < " onclick="p.removeLast()" >    
@@ -66,14 +66,14 @@
     <input type="Button" class="btnOperator" name="btnMult" value=" * " onclick="p.writeOperator('*')">
         
     <br>
-    <input type="Button" class="btnExpresion" name="btnFact" value=" n! "> 
+    <input type="Button" class="btnExpresion" name="btnFact" value=" n! " onclick="p.factorial()"> 
     <input type="Button" name="btn4" value=" 4 " onclick="p.write('4')">
     <input type="Button" name="btn5" value=" 5 " onclick="p.write('5')">
     <input type="Button" name="btn6" value=" 6 " onclick="p.write('6')">
     <input type="Button" class="btnOperator" name="btnMenos" value=" - " onclick="p.writeOperatorSign('-')">
         
     <br>
-    <input type="Button" class="btnExpresion" name="btnAddSubstract" value=" ± ">   
+    <input type="Button" class="btnExpresion" name="btnAddSubstract" value=" ± " onclick="p.changeSign()">   
     <input type="Button" name="btn1" value=" 1 " onclick="p.write('1')">
     <input type="Button" name="btn2" value=" 2 " onclick="p.write('2')">
     <input type="Button" name="btn3" value=" 3 " onclick="p.write('3')">
@@ -82,7 +82,7 @@
     <br>
     <input type="Button" class="btnExpresion" name="btnOpen" value=" ( " onclick="p.write('(')">
     <input type="Button" class="btnExpresion" name="btnClose" value=" ) " onclick="p.write(')')">
-    <input type="Button" name="btn0" value=" 0 " onclick="p.write('0')">
+    <input type="Button" name="btn0" value=" 0 " onclick="p.writeZero()">
     <input type="Button" name="btnDot" value=" , " onclick="p.write('.')">
     <input type="Button" class="btnExpresion" name="btnIgual" value=" = " onclick="p.calc()">   
         

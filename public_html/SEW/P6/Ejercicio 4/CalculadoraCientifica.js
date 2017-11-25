@@ -23,6 +23,14 @@ class Calculadora{
                 
             }
     
+            writeZero(){
+                if(this.expresion!=""){
+                    this.clean=0;
+                    this.expresion += 0;
+                    document.getElementById('salida').value = this.expresion;
+                }
+            }
+    
             writeOperator(operator){
                 if(document.getElementById('salida').value!=""){
                     if(this.operator == 0){
@@ -80,6 +88,7 @@ class Calculadora{
             showMemory(){
                 document.getElementById('salida').value = this.memory;
                 this.expresion=this.memory;
+                this.clean=1;
             }
         
         }
@@ -93,6 +102,9 @@ class CalculadoraCientifica extends Calculadora{
                 super();
                 this.howLong=0;
                 this.isPi=0;
+                this.isNegative=0;
+                this.isExp=0;
+                this.blockOperatorSign=0;
             }
             
             
@@ -115,6 +127,23 @@ class CalculadoraCientifica extends Calculadora{
                       this.howLong++;
                       this.isPi=0;
                  }  
+                 
+                 
+                 if(this.isExp==1){
+                     if(this.isNegative==0){
+                         var ceros=1;
+                         for(var i=0;i<number;i++){
+                             ceros=ceros*10;
+                         }
+                         this.expresion=this.expresion*ceros;
+                         document.getElementById('salida').value = this.expresion;
+                         this.isExp=0;
+                         this.clean=1;
+                     }
+                     
+                 }
+                 
+                 
                 
             }
             
@@ -127,10 +156,22 @@ class CalculadoraCientifica extends Calculadora{
                         this.operator=1;
                         this.clean=0;
                         this.isPi=0;
+                        if(operator=="-"){
+                            this.isNegative=1;
+                        }else if(operator=="+"){
+                            this.isNegative=0;
+                        }
                     }
                 }
              }
-                 
+    
+            writeOperatorSign(operator){
+                if(this.blockOperatorSign==0){
+                    super.writeOperatorSign(operator);
+                }
+            }
+    
+                    
             
             calcExpresion(operator){
                 if(operator=="log"){
@@ -152,16 +193,33 @@ class CalculadoraCientifica extends Calculadora{
                 }
                 
                 document.getElementById('salida').value = this.expresion;
-                this.expresion="";
+                this.clean=1;
                 
             } 
-                 
     
+
+             factorial() {
+                this.calc();
+                var limit = Math.round(this.expresion);
+                var acum = 1; 
+                for(var i=1; i<=limit; i++) {
+                     acum=acum*i;
+                }
+                this.expresion=acum;
+                document.getElementById('salida').value = this.expresion;
+                clean=0;
+             }
+
+  
             cleanCE(){
                 if(this.operator!=1){
                     this.expresion=this.expresion.slice(0,-this.howLong);
                     document.getElementById('salida').value = this.expresion;
                     this.operator=1;
+                }else{
+                    this.expresion=this.expresion.slice(0,-1);
+                    document.getElementById('salida').value = this.expresion;
+                    this.operator=0;
                 }
             }
     
@@ -183,7 +241,32 @@ class CalculadoraCientifica extends Calculadora{
                 
             }
     
-              
+    
+            changeSign(){
+                 if(this.operator==0){
+                    super.calc();
+                    this.expresion = this.expresion * (-1);
+                    document.getElementById('salida').value = this.expresion;
+                 }
+            }
+    
+    
+            writeExpo(){
+                document.getElementById('salida').value = this.expresion+",e+";
+                this.isExp=1;
+                this.operator=1;
+                this.blockOperatorSign=1;
+            }  
+    
+    
+            clearMemory(){
+                super.memory="";
+            }
+    
+            replaceMemory(){           
+                super.memory= document.getElementById('salida').value;
+            }
+            
         }
 
 

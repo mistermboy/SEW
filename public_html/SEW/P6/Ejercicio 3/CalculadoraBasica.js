@@ -23,6 +23,14 @@ class Calculadora {
                 
             }
     
+            writeZero(){
+                if(this.expresion!=""){
+                    this.clean=0;
+                    this.expresion += 0;
+                    document.getElementById('salida').value = this.expresion;
+                }
+            }
+    
             writeOperator(operator){
                 if(document.getElementById('salida').value!=""){
                     if(this.operator == 0){
