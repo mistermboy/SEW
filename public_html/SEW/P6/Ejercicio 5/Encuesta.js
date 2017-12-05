@@ -4,7 +4,14 @@
 "use strict";
 class Encuesta{
 
-         
+        constructor(){
+        }
+    
+         checkCampos(){
+             if(document.getElementsByClassName('campo').value==""){
+                 document.getElementsByClassName('campo').value="funciona";
+             }
+         }
         
 }
 
