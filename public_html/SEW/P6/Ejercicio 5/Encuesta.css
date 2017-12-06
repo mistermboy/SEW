@@ -1,41 +1,64 @@
 body {
         font: 400 15px Tahoma, sans-serif;
         line-height: 1.8;
-        background-color: #A3A39E;
-        color:white;
+        background-color: #D9D7D8;
+        color:black;
         margin: auto;
         text-align:center;
         letter-spacing: 1px;
   }
 
+header{
+    background-color: #A0FF86;
+}
 
 h1{
     font: 60px Tahoma, sans-serif;
     line-height: 1.8;
-    color:#A0FF86;
+    color:black;
+     background-color: #A0FF86;
+}
 
+h3{
+    color:red;
 }
 
 
-form{
-   font: 20px Tahoma, sans-serif;
-    line-height: 1.8;
-    color:white;
+
+textarea.btnOculto {
+    resize: none;
+    background-color: transparent;
+   color:red;
 }
 
-form.campos{
-   font: 20px Tahoma, sans-serif;
+textarea.coments {
+    resize: none;
+    background-color: white;
+    color:black;
+}
+
+.sPreguntas{
+    text-align:left;
+    font: 20px Tahoma, sans-serif;
     line-height: 1.8;
-    color:white;
+    margin: 0 auto;
+    position:relative;
+    display:block;
+    float:center;
+    width: 600px;
+    height: 800px;
+    color:black;
+}
+
+
+.sDatos{
     text-align:left;
     display: inline-block;
-    float: center;
+    font: 20px Tahoma, sans-serif;
+    line-height: 1.8;
+    float:bottom;
+    margin: top;
+    width: 600px;
+    height: 600px;
+    color:black;
 }
-
-input {
-  display: inline-block;
-  float: center;
-}
-
-
-

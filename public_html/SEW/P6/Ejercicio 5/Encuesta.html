@@ -19,199 +19,191 @@
     </header>
      
     <main>
+        
+        
+        <section style="display:block" id="sFormulario" >
     
+        <h2>A continuación se muestran las diferentes preguntas que el usuario deberá reponder
+        para evaluar la calculadora científica desarrollada en la práctica anterior. Responder
+        teniendo en cuenta que las respuestas se califican de 1 a 10, siendo 1 muy en desacuerdo
+        y 10 muy de acuerdo.</h2>
         
-        <form>   
-        <br>   
-            La calculadora científica cumple con los objetivos establecidos en el enunciado de la práctica
-        <br>   
-            <input type="radio" name="radioPregunta1" value="1" > 1
-            <input type="radio" name="radioPregunta1" value="2"> 2
-            <input type="radio" name="radioPregunta1" value="3"> 3 
-            <input type="radio" name="radioPregunta1" value="4" > 4
-            <input type="radio" name="radioPregunta1" value="5"> 5
-            <input type="radio" name="radioPregunta1" value="6"> 6
-            <input type="radio" name="radioPregunta1" value="7"> 7
-            <input type="radio" name="radioPregunta1" value="8"> 8 
-            <input type="radio" name="radioPregunta1" value="9" > 9
-            <input type="radio" name="radioPregunta1" value="10"> 10
-        
-        </form>
-        
-        <form>   
-        
-        <br>   
-            La calculadora científica es accesible 
-        <br>   
-            <input type="radio" name="radioPregunta2" value="1" > 1
-            <input type="radio" name="radioPregunta2" value="2"> 2
-            <input type="radio" name="radioPregunta2" value="3"> 3 
-            <input type="radio" name="radioPregunta2" value="4" > 4
-            <input type="radio" name="radioPregunta2" value="5"> 5
-            <input type="radio" name="radioPregunta2" value="6"> 6
-            <input type="radio" name="radioPregunta2" value="7"> 7
-            <input type="radio" name="radioPregunta2" value="8"> 8 
-            <input type="radio" name="radioPregunta2" value="9" > 9
-            <input type="radio" name="radioPregunta2" value="10"> 10
-            
-        </form>
-       
-        <form>   
-        
-        <br>   
-            La calculadora científica es facil de usar 
-        <br>   
-            <input type="radio" name="radioPregunta3" value="1" > 1
-            <input type="radio" name="radioPregunta3" value="2"> 2
-            <input type="radio" name="radioPregunta3" value="3"> 3 
-            <input type="radio" name="radioPregunta3" value="4" > 4
-            <input type="radio" name="radioPregunta3" value="5"> 5
-            <input type="radio" name="radioPregunta3" value="6"> 6
-            <input type="radio" name="radioPregunta3" value="7"> 7
-            <input type="radio" name="radioPregunta3" value="8"> 8 
-            <input type="radio" name="radioPregunta3" value="9" > 9
-            <input type="radio" name="radioPregunta3" value="10"> 10
-        
-        </form>
-        
-        <form>  
-             
-        <br>   
-            La calculadora científica usa la metáfora de una calculadora
-        <br>   
-            <input type="radio" name="radioPregunta4" value="1" > 1
-            <input type="radio" name="radioPregunta4" value="2"> 2
-            <input type="radio" name="radioPregunta4" value="3"> 3 
-            <input type="radio" name="radioPregunta4" value="4" > 4
-            <input type="radio" name="radioPregunta4" value="5"> 5
-            <input type="radio" name="radioPregunta4" value="6"> 6
-            <input type="radio" name="radioPregunta4" value="7"> 7
-            <input type="radio" name="radioPregunta4" value="8"> 8 
-            <input type="radio" name="radioPregunta4" value="9" > 9
-            <input type="radio" name="radioPregunta4" value="10"> 10
-            
-        </form>
-        
-        <form>
-        
-        <br>  
-            La calculadora científica es intuitiva
-        <br>   
-            <input type="radio" name="radioPregunta5" value="1" > 1
-            <input type="radio" name="radioPregunta5" value="2"> 2
-            <input type="radio" name="radioPregunta5" value="3"> 3 
-            <input type="radio" name="radioPregunta5" value="4" > 4
-            <input type="radio" name="radioPregunta5" value="5"> 5
-            <input type="radio" name="radioPregunta5" value="6"> 6
-            <input type="radio" name="radioPregunta5" value="7"> 7
-            <input type="radio" name="radioPregunta5" value="8"> 8 
-            <input type="radio" name="radioPregunta5" value="9" > 9
-            <input type="radio" name="radioPregunta5" value="10"> 10
-            
-         </form>
+        <h3>(ES OBLIGATORIO RESPONDER A TODAS LAS PREGUNTAS)</h3>
         
         
-        <form>
+        <div class="sPreguntas">
+            <form class="preguntas" onchange="e.actualizaPreguntas()">   
+            <br>   
+                La calculadora científica cumple con los objetivos establecidos en el enunciado de la práctica
+            <br>   
+                <input type="radio" name="radioPregunta1" value="1" >1
+                <input type="radio" name="radioPregunta1" value="2"> 2
+                <input type="radio" name="radioPregunta1" value="3"> 3 
+                <input type="radio" name="radioPregunta1" value="4" > 4
+                <input type="radio" name="radioPregunta1" value="5"> 5
+                <input type="radio" name="radioPregunta1" value="6"> 6
+                <input type="radio" name="radioPregunta1" value="7"> 7
+                <input type="radio" name="radioPregunta1" value="8"> 8 
+                <input type="radio" name="radioPregunta1" value="9" > 9
+                <input type="radio" name="radioPregunta1" value="10"> 10
+
+
+            <br>   
+                La calculadora científica es accesible 
+            <br>   
+                <input type="radio" name="radioPregunta2" value="1" > 1
+                <input type="radio" name="radioPregunta2" value="2"> 2
+                <input type="radio" name="radioPregunta2" value="3"> 3 
+                <input type="radio" name="radioPregunta2" value="4" > 4
+                <input type="radio" name="radioPregunta2" value="5"> 5
+                <input type="radio" name="radioPregunta2" value="6"> 6
+                <input type="radio" name="radioPregunta2" value="7"> 7
+                <input type="radio" name="radioPregunta2" value="8"> 8 
+                <input type="radio" name="radioPregunta2" value="9" > 9
+                <input type="radio" name="radioPregunta2" value="10"> 10
+
+
+            <br>   
+                La calculadora científica es facil de usar 
+            <br>   
+                <input type="radio" name="radioPregunta3" value="1" > 1
+                <input type="radio" name="radioPregunta3" value="2"> 2
+                <input type="radio" name="radioPregunta3" value="3"> 3 
+                <input type="radio" name="radioPregunta3" value="4" > 4
+                <input type="radio" name="radioPregunta3" value="5"> 5
+                <input type="radio" name="radioPregunta3" value="6"> 6
+                <input type="radio" name="radioPregunta3" value="7"> 7
+                <input type="radio" name="radioPregunta3" value="8"> 8 
+                <input type="radio" name="radioPregunta3" value="9" > 9
+                <input type="radio" name="radioPregunta3" value="10"> 10
+
+
+
+            <br>   
+                La calculadora científica usa la metáfora de una calculadora
+            <br>   
+                <input type="radio" name="radioPregunta4" value="1" > 1
+                <input type="radio" name="radioPregunta4" value="2"> 2
+                <input type="radio" name="radioPregunta4" value="3"> 3 
+                <input type="radio" name="radioPregunta4" value="4" > 4
+                <input type="radio" name="radioPregunta4" value="5"> 5
+                <input type="radio" name="radioPregunta4" value="6"> 6
+                <input type="radio" name="radioPregunta4" value="7"> 7
+                <input type="radio" name="radioPregunta4" value="8"> 8 
+                <input type="radio" name="radioPregunta4" value="9" > 9
+                <input type="radio" name="radioPregunta4" value="10"> 10
+
+
+            <br>  
+                La calculadora científica es intuitiva
+            <br>   
+                <input type="radio" name="radioPregunta5" value="1" > 1
+                <input type="radio" name="radioPregunta5" value="2"> 2
+                <input type="radio" name="radioPregunta5" value="3"> 3 
+                <input type="radio" name="radioPregunta5" value="4" > 4
+                <input type="radio" name="radioPregunta5" value="5"> 5
+                <input type="radio" name="radioPregunta5" value="6"> 6
+                <input type="radio" name="radioPregunta5" value="7"> 7
+                <input type="radio" name="radioPregunta5" value="8"> 8 
+                <input type="radio" name="radioPregunta5" value="9" > 9
+                <input type="radio" name="radioPregunta5" value="10"> 10
+
+
+
+            <br>   
+                La calculadora científica es util
+            <br>   
+                <input type="radio" name="radioPregunta6" value="1" > 1
+                <input type="radio" name="radioPregunta6" value="2"> 2
+                <input type="radio" name="radioPregunta6" value="3"> 3 
+                <input type="radio" name="radioPregunta6" value="4" > 4
+                <input type="radio" name="radioPregunta6" value="5"> 5
+                <input type="radio" name="radioPregunta6" value="6"> 6
+                <input type="radio" name="radioPregunta6" value="7"> 7
+                <input type="radio" name="radioPregunta6" value="8"> 8 
+                <input type="radio" name="radioPregunta6" value="9" > 9
+                <input type="radio" name="radioPregunta6" value="10"> 10
+
+
+
+            <br>   
+                La calculadora científica tiene una interfaz bonita
+            <br>   
+                <input type="radio" name="radioPregunta7" value="1" > 1
+                <input type="radio" name="radioPregunta7" value="2"> 2
+                <input type="radio" name="radioPregunta7" value="3"> 3 
+                <input type="radio" name="radioPregunta7" value="4" > 4
+                <input type="radio" name="radioPregunta7" value="5"> 5
+                <input type="radio" name="radioPregunta7" value="6"> 6
+                <input type="radio" name="radioPregunta7" value="7"> 7
+                <input type="radio" name="radioPregunta7" value="8"> 8 
+                <input type="radio" name="radioPregunta7" value="9" > 9
+                <input type="radio" name="radioPregunta7" value="10"> 10
+
+
+            <br>   
+                La calculadora científica es original
+            <br>   
+                <input type="radio" name="radioPregunta8" value="1" > 1
+                <input type="radio" name="radioPregunta8" value="2"> 2
+                <input type="radio" name="radioPregunta8" value="3"> 3 
+                <input type="radio" name="radioPregunta8" value="4" > 4
+                <input type="radio" name="radioPregunta8" value="5"> 5
+                <input type="radio" name="radioPregunta8" value="6"> 6
+                <input type="radio" name="radioPregunta8" value="7"> 7
+                <input type="radio" name="radioPregunta8" value="8"> 8 
+                <input type="radio" name="radioPregunta8" value="9" > 9
+                <input type="radio" name="radioPregunta8" value="10"> 10
+
+
+            <br>   
+                La calculadora científica es funcional
+            <br>   
+                <input type="radio" name="radioPregunta9" value="1" > 1
+                <input type="radio" name="radioPregunta9" value="2"> 2
+                <input type="radio" name="radioPregunta9" value="3"> 3 
+                <input type="radio" name="radioPregunta9" value="4" > 4
+                <input type="radio" name="radioPregunta9" value="5"> 5
+                <input type="radio" name="radioPregunta9" value="6"> 6
+                <input type="radio" name="radioPregunta9" value="7"> 7
+                <input type="radio" name="radioPregunta9" value="8"> 8 
+                <input type="radio" name="radioPregunta9" value="9" > 9
+                <input type="radio" name="radioPregunta9" value="10"> 10
+
+
+            <br>   
+                En lineas generales, valora la calculadora del 1 al 10
+            <br>   
+                <input type="radio" name="radioPregunta10" value="1" > 1
+                <input type="radio" name="radioPregunta10" value="2"> 2
+                <input type="radio" name="radioPregunta10" value="3"> 3 
+                <input type="radio" name="radioPregunta10" value="4" > 4
+                <input type="radio" name="radioPregunta10" value="5"> 5
+                <input type="radio" name="radioPregunta10" value="6"> 6
+                <input type="radio" name="radioPregunta10" value="7"> 7
+                <input type="radio" name="radioPregunta10" value="8"> 8 
+                <input type="radio" name="radioPregunta10" value="9" > 9
+                <input type="radio" name="radioPregunta10" value="10"> 10
+
+            </form> 
+        </div>
         
-        <br>   
-            La calculadora científica es util
-        <br>   
-            <input type="radio" name="radioPregunta6" value="1" > 1
-            <input type="radio" name="radioPregunta6" value="2"> 2
-            <input type="radio" name="radioPregunta6" value="3"> 3 
-            <input type="radio" name="radioPregunta6" value="4" > 4
-            <input type="radio" name="radioPregunta6" value="5"> 5
-            <input type="radio" name="radioPregunta6" value="6"> 6
-            <input type="radio" name="radioPregunta6" value="7"> 7
-            <input type="radio" name="radioPregunta6" value="8"> 8 
-            <input type="radio" name="radioPregunta6" value="9" > 9
-            <input type="radio" name="radioPregunta6" value="10"> 10
-            
         
-        </form>
         
-         <form>
+        <h2>Por último, rellenar los datos del formulario teniendo en cuenta los campos obligatorios (*)</h2>
         
-        <br>   
-            La calculadora científica tiene una interfaz bonita
-        <br>   
-            <input type="radio" name="radioPregunta7" value="1" > 1
-            <input type="radio" name="radioPregunta7" value="2"> 2
-            <input type="radio" name="radioPregunta7" value="3"> 3 
-            <input type="radio" name="radioPregunta7" value="4" > 4
-            <input type="radio" name="radioPregunta7" value="5"> 5
-            <input type="radio" name="radioPregunta7" value="6"> 6
-            <input type="radio" name="radioPregunta7" value="7"> 7
-            <input type="radio" name="radioPregunta7" value="8"> 8 
-            <input type="radio" name="radioPregunta7" value="9" > 9
-            <input type="radio" name="radioPregunta7" value="10"> 10
-             
-        </form>
-        
-         <form>
-        
-        <br>   
-            La calculadora científica es original
-        <br>   
-            <input type="radio" name="radioPregunta8" value="1" > 1
-            <input type="radio" name="radioPregunta8" value="2"> 2
-            <input type="radio" name="radioPregunta8" value="3"> 3 
-            <input type="radio" name="radioPregunta8" value="4" > 4
-            <input type="radio" name="radioPregunta8" value="5"> 5
-            <input type="radio" name="radioPregunta8" value="6"> 6
-            <input type="radio" name="radioPregunta8" value="7"> 7
-            <input type="radio" name="radioPregunta8" value="8"> 8 
-            <input type="radio" name="radioPregunta8" value="9" > 9
-            <input type="radio" name="radioPregunta8" value="10"> 10
-             
-        </form>
-        
-        <form>
-        
-        <br>   
-            Valora la funcionabilidad de la calculadora
-        <br>   
-            <input type="radio" name="radioPregunta9" value="1" > 1
-            <input type="radio" name="radioPregunta9" value="2"> 2
-            <input type="radio" name="radioPregunta9" value="3"> 3 
-            <input type="radio" name="radioPregunta9" value="4" > 4
-            <input type="radio" name="radioPregunta9" value="5"> 5
-            <input type="radio" name="radioPregunta9" value="6"> 6
-            <input type="radio" name="radioPregunta9" value="7"> 7
-            <input type="radio" name="radioPregunta9" value="8"> 8 
-            <input type="radio" name="radioPregunta9" value="9" > 9
-            <input type="radio" name="radioPregunta9" value="10"> 10
-        
-         </form>    
-        
-         <form>
-            
-        <br>   
-            En lineas generales, valora la calculadora
-        <br>   
-            <input type="radio" name="radioPregunta9" value="1" > 1
-            <input type="radio" name="radioPregunta9" value="2"> 2
-            <input type="radio" name="radioPregunta9" value="3"> 3 
-            <input type="radio" name="radioPregunta9" value="4" > 4
-            <input type="radio" name="radioPregunta9" value="5"> 5
-            <input type="radio" name="radioPregunta9" value="6"> 6
-            <input type="radio" name="radioPregunta9" value="7"> 7
-            <input type="radio" name="radioPregunta9" value="8"> 8 
-            <input type="radio" name="radioPregunta9" value="9" > 9
-            <input type="radio" name="radioPregunta9" value="10"> 10
-        
-        </form> 
-        
-        <form class="campos">
+       <div class="sDatos">  
+            <form class="campos">
             <br>
-                <label for="nombre">Nombre: <input type="text" class="campo" id="nombre" /></label>
+                <label for="campoNombre">Nombre: (*)<input type="text" id="campoNombre" /></label>
             <br>
-                <label for="apellido1">Primer apellido: <input type="text" class="campo" id="apellido1" /></label>
+                <label for="campoApellido1">Primer apellido: (*)<input type="text" id="campoApellido1" /></label>
             <br>
-                <label for="apelldio2">Segundo apellido: <input type="text" class="campo" id="apellido2" /></label>
+                <label for="campoApellido2">Segundo apellido: (*)<input type="text" id="campoApellido2" /></label>
             
-            <br>Edad:
-                <select>
+            
+              <br>Edad:
+                <select name="edades">
                     <option value="18">18</option>
                     <option value="19">19</option>
                     
@@ -305,37 +297,291 @@
                     
                 </select>
             
-            <br>   
-              <input type="radio" name="radioGenero" value="masculino" checked> Masculino
-            <br>
-              <input type="radio" name="radioGenero" value="femenino"> Femenino
-            <br>
-              <input type="radio" name="radioGenero" value="Otro"> Otro
-            
-            <br>
-                <label for="email">Email: <input type="text" id="email" /></label>
-            
-        </form> 
-        
-        
-        
-        <form>    
-
-            
+                
+          
+                <br>Género:    
+                 <br>   
+                  <input type="radio" id="radioMasc" name="radioGenero" value="masculino" checked> Masculino
                 <br>
-                    <select>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
-
+                  <input type="radio" id="radioFem"  name="radioGenero" value="femenino"> Femenino
                 <br>
-                    <input type="Button" class="btnSubmit" name="btnSubmit" value=" Enviar " onclick="e.checkCampos()" />
-
-        </form>    
+                  <input type="radio" id="radioOtro"  name="radioGenero" value="Otro"> Otro
             
+            
+            <br>
+                   País <select name="paises">
+                      <option value="AF">Afganistán</option> 
+                      <option value="AL">Albania</option> 
+                      <option value="DE">Alemania</option> 
+                      <option value="AD">Andorra</option> 
+                      <option value="AO">Angola</option> 
+                      <option value="AI">Anguilla</option> 
+                      <option value="AQ">Antártida</option> 
+                      <option value="AG">Antigua y Barbuda</option> 
+                      <option value="AN">Antillas Holandesas</option> 
+                      <option value="SA">Arabia Saudí</option> 
+                      <option value="DZ">Argelia</option> 
+                      <option value="AR">Argentina</option> 
+                      <option value="AM">Armenia</option> 
+                      <option value="AW">Aruba</option> 
+                      <option value="AU">Australia</option> 
+                      <option value="AT">Austria</option>  
+                      <option value="BS">Bahamas</option>  
+                      <option value="BH">Bahrein</option>  
+                      <option value="BD">Bangladesh</option>  
+                      <option value="BB">Barbados</option>  
+                      <option value="BE">Bélgica</option>  
+                      <option value="BZ">Belice</option>  
+                      <option value="BJ">Benin</option>  
+                      <option value="BM">Bermudas</option>  
+                      <option value="BY">Bielorrusia</option>  
+                      <option value="MM">Birmania</option>  
+                      <option value="BO">Bolivia</option>  
+                      <option value="BA">Bosnia y Herzegovina</option>  
+                      <option value="BW">Botswana</option>  
+                      <option value="BR">Brasil</option>  
+                      <option value="BN">Brunei</option>  
+                      <option value="BG">Bulgaria</option>  
+                      <option value="BF">Burkina Faso</option>  
+                      <option value="BI">Burundi</option>  
+                      <option value="CV">Cabo Verde</option>  
+                      <option value="KH">Camboya</option>  
+                      <option value="CA">Canadá¡</option>  
+                      <option value="TD">Chad</option>  
+                      <option value="CL">Chile</option>  
+                      <option value="CN">China</option>  
+                      <option value="CY">Chipre</option>  
+                      <option value="VA">Ciudad del Vaticano (Santa Sede)</option>  
+                      <option value="CO">Colombia</option>  
+                      <option value="KM">Comores</option>  
+                      <option value="CG">Congo</option>   
+                      <option value="KR">Corea</option>  
+                      <option value="KP">Corea del Norte</option>  
+                      <option value="CR">Costa Rica</option>  
+                      <option value="HR">Croacia (Hrvatska)</option>  
+                      <option value="CU">Cuba</option>  
+                      <option value="DK">Dinamarca</option>  
+                      <option value="DJ">Djibouti</option>  
+                      <option value="DM">Dominica</option>  
+                      <option value="EC">Ecuador</option>  
+                      <option value="EG">Egipto</option>  
+                      <option value="SV">El Salvador</option>  
+                      <option value="AE">Emiratos Ãrabes Unidos</option>  
+                      <option value="ER">Eritrea</option>  
+                      <option value="SI">Eslovenia</option>  
+                      <option value="ES" selected>España</option>  
+                      <option value="US">Estados Unidos</option>  
+                      <option value="EE">Estonia</option>  
+                      <option value="ET">Etiopía</option>  
+                      <option value="FJ">Fiji</option>  
+                      <option value="PH">Filipinas</option>  
+                      <option value="FI">Finlandia</option>  
+                      <option value="FR">Francia</option>  
+                      <option value="GM">Gambia</option>  
+                      <option value="GE">Georgia</option>  
+                      <option value="GH">Ghana</option>  
+                      <option value="GI">Gibraltar</option>  
+                      <option value="GD">Granada</option>  
+                      <option value="GR">Grecia</option>  
+                      <option value="GL">Groenlandia</option>  
+                      <option value="GP">Guadalupe</option>  
+                      <option value="GU">Guam</option>  
+                      <option value="GT">Guatemala</option>  
+                      <option value="GY">Guayana</option>  
+                      <option value="GF">Guayana Francesa</option>  
+                      <option value="GN">Guinea</option>  
+                      <option value="GQ">Guinea Ecuatorial</option>  
+                      <option value="GW">Guinea-Bissau</option>  
+                      <option value="HT">Haití</option>  
+                      <option value="HN">Honduras</option>  
+                      <option value="HU">Hungría</option>  
+                      <option value="IN">India</option>  
+                      <option value="ID">Indonesia</option>  
+                      <option value="IQ">Irak</option>  
+                      <option value="IR">IrÃ¡n</option>  
+                      <option value="IE">Irlanda</option>  
+                      <option value="BV">Isla Bouvet</option>  
+                      <option value="CX">Isla de Christmas</option>  
+                      <option value="IS">Islandia</option>  
+                      <option value="KY">Islas CaimÃ¡n</option>  
+                      <option value="CK">Islas Cook</option>  
+                      <option value="CC">Islas de Cocos o Keeling</option>  
+                      <option value="FO">Islas Faroe</option>  
+                      <option value="HM">Islas Heard y McDonald</option>  
+                      <option value="FK">Islas Malvinas</option>  
+                      <option value="MP">Islas Marianas del Norte</option>  
+                      <option value="MH">Islas Marshall</option>  
+                      <option value="UM">Islas menores de Estados Unidos</option>  
+                      <option value="PW">Islas Palau</option>  
+                      <option value="SB">Islas SalomÃ³n</option>  
+                      <option value="SJ">Islas Svalbard y Jan Mayen</option>  
+                      <option value="TK">Islas Tokelau</option>  
+                      <option value="TC">Islas Turks y Caicos</option>  
+                      <option value="WF">Islas Wallis y Futuna</option>  
+                      <option value="IL">Israel</option>  
+                      <option value="IT">Italia</option>  
+                      <option value="JM">Jamaica</option>  
+                      <option value="JP">JapÃ³n</option>  
+                      <option value="JO">Jordania</option>  
+                      <option value="KZ">KazajistÃ¡n</option>  
+                      <option value="KE">Kenia</option>  
+                      <option value="KG">KirguizistÃ¡n</option>  
+                      <option value="KI">Kiribati</option>  
+                      <option value="KW">Kuwait</option>  
+                      <option value="LA">Laos</option>  
+                      <option value="LS">Lesotho</option>  
+                      <option value="LV">Letonia</option>  
+                      <option value="LB">Líbano</option>  
+                      <option value="LR">Liberia</option>  
+                      <option value="LY">Libia</option>  
+                      <option value="LI">Liechtenstein</option>  
+                      <option value="LT">Lituania</option>  
+                      <option value="LU">Luxemburgo</option>  
+                      <option value="MK">Macedonia, Ex-RepÃºblica Yugoslava de</option>  
+                      <option value="MG">Madagascar</option>  
+                      <option value="MY">Malasia</option>  
+                      <option value="MW">Malawi</option>  
+                      <option value="MV">Maldivas</option>  
+                      <option value="ML">Malí</option>  
+                      <option value="MT">Malta</option>  
+                      <option value="MA">Marruecos</option>  
+                      <option value="MQ">Martinica</option>  
+                      <option value="MU">Mauricio</option>  
+                      <option value="MR">Mauritania</option>  
+                      <option value="YT">Mayotte</option>  
+                      <option value="MX">México</option>  
+                      <option value="FM">Micronesia</option>  
+                      <option value="MD">Moldavia</option>  
+                      <option value="MC">MÃ³naco</option>  
+                      <option value="MN">Mongolia</option>  
+                      <option value="MS">Montserrat</option>  
+                      <option value="MZ">Mozambique</option>  
+                      <option value="NA">Namibia</option>  
+                      <option value="NR">Nauru</option>  
+                      <option value="NP">Nepal</option>  
+                      <option value="NI">Nicaragua</option>  
+                      <option value="NG">Nigeria</option>  
+                      <option value="NU">Niue</option>  
+                      <option value="NF">Norfolk</option>  
+                      <option value="NO">Noruega</option>  
+                      <option value="NC">Nueva Caledonia</option>  
+                      <option value="NZ">Nueva Zelanda</option>  
+                      <option value="OM">OmÃ¡n</option>  
+                      <option value="NL">Países Bajos</option>  
+                      <option value="PA">PanamÃ¡</option>  
+                      <option value="PG">PapÃºa Nueva Guinea</option>  
+                      <option value="PK">PaquistÃ¡n</option>  
+                      <option value="PY">Paraguay</option>  
+                      <option value="PE">PerÃº</option>  
+                      <option value="PN">Pitcairn</option>  
+                      <option value="PF">Polinesia Francesa</option>  
+                      <option value="PL">Polonia</option>  
+                      <option value="PT">Portugal</option>  
+                      <option value="PR">Puerto Rico</option>  
+                      <option value="QA">Qatar</option>  
+                      <option value="UK">Reino Unido</option>  
+                      <option value="CF">RepÃºblica Centroafricana</option>  
+                      <option value="CZ">RepÃºblica Checa</option>  
+                      <option value="ZA">RepÃºblica de SudÃ¡frica</option>  
+                      <option value="DO">RepÃºblica Dominicana</option>  
+                      <option value="SK">RepÃºblica Eslovaca</option>  
+                      <option value="RE">ReuniÃ³n</option>  
+                      <option value="RW">Ruanda</option>  
+                      <option value="RO">Rumania</option>  
+                      <option value="RU">Rusia</option>  
+                      <option value="EH">Sahara Occidental</option>  
+                      <option value="KN">Saint Kitts y Nevis</option>  
+                      <option value="WS">Samoa</option>  
+                      <option value="AS">Samoa Americana</option>  
+                      <option value="SM">San Marino</option>  
+                      <option value="VC">San Vicente y Granadinas</option>  
+                      <option value="SH">Santa Helena</option>  
+                      <option value="LC">Santa Lucía</option>  
+                      <option value="SN">Senegal</option>  
+                      <option value="SC">Seychelles</option>  
+                      <option value="SL">Sierra Leona</option>  
+                      <option value="SG">Singapur</option>  
+                      <option value="SY">Siria</option>  
+                      <option value="SO">Somalia</option>  
+                      <option value="LK">Sri Lanka</option>  
+                      <option value="PM">St. Pierre y Miquelon</option>  
+                      <option value="SZ">Suazilandia</option>  
+                      <option value="SD">SudÃ¡n</option>  
+                      <option value="SE">Suecia</option>  
+                      <option value="CH">Suiza</option>  
+                      <option value="SR">Surinam</option>  
+                      <option value="TH">Tailandia</option>  
+                      <option value="TW">TaiwÃ¡n</option>  
+                      <option value="TZ">Tanzania</option>  
+                      <option value="TJ">TayikistÃ¡n</option>  
+                      <option value="TF">Territorios franceses del Sur</option>  
+                      <option value="TP">Timor Oriental</option>  
+                      <option value="TG">Togo</option>  
+                      <option value="TO">Tonga</option>  
+                      <option value="TT">Trinidad y Tobago</option>  
+                      <option value="TN">Túnez</option>  
+                      <option value="TM">TurkmenistÃ¡n</option>  
+                      <option value="TR">Turquía</option>  
+                      <option value="TV">Tuvalu</option>  
+                      <option value="UA">Ucrania</option>  
+                      <option value="UG">Uganda</option>  
+                      <option value="UY">Uruguay</option>  
+                      <option value="UZ">Uzbekistán</option>  
+                      <option value="VU">Vanuatu</option>  
+                      <option value="VE">Venezuela</option>  
+                      <option value="VN">Vietnam</option>  
+                      <option value="YE">Yemen</option>  
+                      <option value="YU">Yugoslavia</option>  
+                      <option value="ZM">Zambia</option>  
+                      <option value="ZW">Zimbabue</option> 
+            </select>
         
+            <br>
+                Ocupación <select name="ocupaciones">
+                        <option value="P">Profesor</option>
+                        <option value="A">Alumno</option>
+                        <option value="O">Otro</option>
+            
+                </select>
+                
+            
+           <br>
+                <label for="email">Email: (*)<input type="email" id="email" /></label>
+            
+                
+            <br>Comentarios:
+                
+            <br>
+                <textarea rows="5" cols="50" name="erores" class="coments" id="coment" value="" > </textarea>
+                
+            <br>
+            <textarea rows="4" cols="50" name="erores" style="display:none" class="btnOculto" id="oculto" value="" disabled> </textarea>
+            
+            
+            <br>
+                <input type="checkbox" id="conditions" name="acepto" value="acepto"> Acepto las condiciones de uso
+            
+            <br>
+                <input type="reset" name="borrarTodo" value="Borrar datos del formulario" />
+                <input type="Button" class="btnSubmit" name="btnSubmit" value=" Enviar " onclick="e.checkCampos()" />
+            
+         </form>  
+        </div>    
+        
+        </section>
+        
+        
+        <section style="display:none" id="sResultado" > 
+            
+                <h2>ENCUESTA REALIZADA CON ÉXITO</h2>
+            
+                <h3>La media de sus respuestas ha sido:</h3>
+                <input type="text" id="result" />
+                <p>Se le ha enviado un email a su correo con sus datos y el resultado de la encuesta. Gracias por su tiempo.</p>
+            
+             <input type="Button" class="btnRestart" name="btnRestart" value=" Realizar de nuevo la encuesta " onclick="e.start()" />
+            
+        </section>
                               
     </main>
 
