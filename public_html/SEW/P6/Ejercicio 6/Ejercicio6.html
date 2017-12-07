@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+   <meta charset="UTF-8"/>
+    <meta name="autor" content="Pablo Menéndez Suárez"/>
+    <meta name="description" content="Ejercicio temática libre: Tres en raya"/>
+    <title>Encuesta</title>
+    <link rel = "stylesheet" href = "Ejercicio6.css"/>
+    <script src = "Ejercicio6.js"></script>
+    
+</head>
+
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+
+    <header>
+        <h1>TRES EN RAYA</h1>
+    </header>
+     
+    <main>
+        
+        
+        <form id='inicio' style="display:block">
+            <br>
+                Jugador Rojo <input type='text'  id="J1">
+            <br>
+                Jugador Azul <input type='text' id="J2" >
+            
+            <br>
+                <input type='text' id="warning" style="display:none" value="Es imprescindible rellenar todos los campos">
+            
+            <br>
+                <input type="button" id='btnComenzar' value="Comenzar partida" onClick=t.mostrarTablero()>
+        
+        </form>
+        
+        
+        
+        
+        <form id='tablero' style="display:none">
+            
+            <input type='text' class="T1" id="turno" value="Turno del jugador rojo">
+        
+ 
+            <br> 
+             <input type="button" class="J1" id='btn1'  value=" " onclick="t.play('btn1')">
+            <input type="button"  class="J1" id="btn2"  value=" " onclick="t.play('btn2')">
+            <input type="button"  class="J1" id="btn3"  value=" " onclick="t.play('btn3')">
+            
+             <br>
+            <input type="button"  class="J1" id="btn4"  value=" "onclick="t.play('btn4')">
+            <input type="button"   class="J1" id="btn5" value=" " onclick="t.play('btn5')">
+            <input type="button"  class="J1"  id="btn6"  value=" " onclick="t.play('btn6')">
+            
+             <br>
+            <input type="button"   class="J1" id="btn7"  value=" " onclick="t.play('btn7')">
+            <input type="button"  class="J1" id="btn8" value=" " onclick="t.play('btn8')">
+            <input type="button"  class="J1" id="btn9"  value=" " onclick="t.play('btn9')">
+            
+            
+        </form>
+        
+        
+        <form  id='resultado' style="display:none">
+            
+            <input type='text' class='G1' id="result" value=" ">
+            
+            <br>
+                <input type="button" id="btnRestablecer" value="Jugar de nuevo" onclick="t.restablecer()"> 
+            
+         </form>
+        
+
+    </main>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+body {
+        font: 400 15px Tahoma, sans-serif;
+        line-height: 1.8;
+        background-color: #D9D7D8;
+        color:black;
+        margin: auto;
+        text-align:center;
+        letter-spacing: 1px;
+  }
+
+
+
+h1{
+    font: 60px Tahoma, sans-serif;
+    line-height: 1.8;
+    color:white;
+     background-color: #7B22F7;
+}
+
+h3{
+    color:red;
+}
+
+form[id='inicio']{
+    font: 400 40px Tahoma, sans-serif;
+}
+
+
+input[type="button"]{
+    background-color: white;
+    color: black;
+    width: 130px;
+    height: 140px;
+    text-decoration: none;  
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    margin: 4px 4px; 
+    border-radius: 10%;
+    font: 400 53px Tahoma, sans-serif;
+}
+
+input[type="text"]{
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 30px;
+    text-decoration: none;  
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    margin: 4px 4px; 
+    border-radius: 10%;
+    font: 400 23px Tahoma, sans-serif;
+}
+
+input[id="J1"]{
+    color: red;
+}
+
+input[id="J2"]{
+    color: blue;
+}
+
+input[id="warning"]{
+     background-color: transparent;
+     border-color: transparent;
+    color: red;
+    width: 500px;
+}
+
+
+input[id="btnComenzar"]{
+    background-color: white; 
+    color: black;
+    width: 200px;
+    height: 40px;
+    font: 400 23px Tahoma, sans-serif;
+    margin-top: 80px;
+    margin-left: 160px;
+    border-radius: 9%;
+}
+
+input[id="btnRestablecer"]{
+    background-color: white; 
+    color: black;
+    width: 200px;
+    height: 40px;
+    font: 400 23px Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 9%;
+}
+
+input.T1{
+     background-color: transparent;
+     border-color: transparent;
+     color:red;
+}
+
+input.T2{
+     background-color: transparent;
+     border-color: transparent;
+     color:blue;
+}
+
+input.Fi:hover {}
+   
+
+input.J1:hover {
+    background-color: red; 
+}
+
+input.J2:hover {
+    background-color: blue; 
+}
+
+ 
+input:active {
+  transform: translateY(5px); 
+}
+
+
+input.G1{
+    background-color: transparent;
+    border-color: transparent;
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+    color:red;
+    font-size: 30px;
+}
+
+input.G2{
+    background-color: transparent;
+    border-color: transparent;
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+    color:blue;
+    font-size: 30px;
+}
+
+input.F{
+    background-color: transparent;
+    border-color: transparent;
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+    color:black;
+    font-size: 30px;
+}
+
+
+    form[id='tablero']{
+      width: 500px;
+      height: 500px;    
+      margin: 0 auto;
+      background: black;
+      border-radius: 10%;    
+    }
+
