@@ -140,6 +140,7 @@ class TresEnRaya{
                 document.getElementById('result').value='Juego terminado, ha ganado el jugador rojo';
                 document.getElementById('result').className='G1';
                 document.getElementById('resultado').style.display='block';
+                document.getElementById('turno').value='';
                 this.disabledAll();
                 }
                 if(this.p2Win){
