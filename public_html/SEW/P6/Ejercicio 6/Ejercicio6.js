@@ -135,27 +135,29 @@ class TresEnRaya{
             this.p1Win = this.isWinner(1);
             this.p2Win = this.isWinner(2);
             
-            if(this.p1Win){
+            if(this.p1Win || this.p2Win){
+                if(this.p1Win){
                 document.getElementById('result').value='Juego terminado, ha ganado el jugador rojo';
                 document.getElementById('result').className='G1';
                 document.getElementById('resultado').style.display='block';
                 this.disabledAll();
-            }
-            if(this.p2Win){
-                document.getElementById('result').value='Juego terminado, ha ganado el jugador azul';
-                document.getElementById('result').className='G2';
-                document.getElementById('resultado').style.display='block';
-                document.getElementById('turno').value='';
-                this.disabledAll();
-            }
-            
-            if(this.contJugadas==9){
+                }
+                if(this.p2Win){
+                    document.getElementById('result').value='Juego terminado, ha ganado el jugador azul';
+                    document.getElementById('result').className='G2';
+                    document.getElementById('resultado').style.display='block';
+                    document.getElementById('turno').value='';
+                    this.disabledAll();
+                }
+            }else{
+                if(this.contJugadas==9){
                 document.getElementById('result').value='Juego terminado, ha habido un empate';
                 document.getElementById('result').className='F';
                 document.getElementById('resultado').style.display='block';
                 document.getElementById('turno').value='';
                 this.disabledAll();
-            }
+                }
+            } 
         
         }
     
