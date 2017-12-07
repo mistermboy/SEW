@@ -37,27 +37,24 @@ textarea.coments {
     color:black;
 }
 
-.sPreguntas{
+div.sPreguntas{
     text-align:left;
     font: 20px Tahoma, sans-serif;
     line-height: 1.8;
     margin: 0 auto;
     position:relative;
     display:block;
-    float:center;
     width: 600px;
     height: 800px;
     color:black;
 }
 
 
-.sDatos{
+div.sDatos{
     text-align:left;
     display: inline-block;
     font: 20px Tahoma, sans-serif;
     line-height: 1.8;
-    float:bottom;
-    margin: top;
     width: 600px;
     height: 600px;
     color:black;
