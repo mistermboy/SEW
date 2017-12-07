@@ -15,6 +15,7 @@ h1{
     line-height: 1.8;
     color:white;
      background-color: #7B22F7;
+    margin-top: 0px;
 }
 
 h3{
@@ -29,8 +30,8 @@ form[id='inicio']{
 input[type="button"]{
     background-color: white;
     color: black;
-    width: 130px;
-    height: 140px;
+    width: 110px;
+    height: 100px;
     text-decoration: none;  
     text-align: center;
     border-style: solid;
@@ -43,13 +44,13 @@ input[type="button"]{
 input[type="text"]{
     background-color: white;
     color: black;
-    width: 300px;
-    height: 30px;
+    width: 320px;
+    height: 35px;
     text-decoration: none;  
     text-align: center;
     border-style: solid;
     border-color: black;
-    margin: 4px 4px; 
+    margin: 3px 4px; 
     border-radius: 10%;
     font: 400 23px Tahoma, sans-serif;
 }
@@ -153,8 +154,8 @@ input.F{
 
 
     form[id='tablero']{
-      width: 500px;
-      height: 500px;    
+      width: 420px;
+      height: 400px;    
       margin: 0 auto;
       background: black;
       border-radius: 10%;    
