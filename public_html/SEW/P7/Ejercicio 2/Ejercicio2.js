@@ -12,7 +12,6 @@ class ObtencionDatos{
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
         this.url = '';
-        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
  
     

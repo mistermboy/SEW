@@ -1,6 +1,0 @@
-EJERCICIO 3:
-
-	-Ejercicio 23(este ejercicio es antiguo, no lo vamos a hacer así)
-	-Ejercicio 29(con ajax se pueden cargar JSON,XML y archivos de texto)(en este casp test.txt está cargado en el servidor)
-	-Ejercicio 30(sustituir por solo una parte del texto)(.load("test.txt #p2") carga por el id p2)
-	-Ejercicio 87(Es igual que en el EJERCICIO 2 solo que ahora con un XML, pero hayq que hacer variante, idem que antes, xmlPretty)
