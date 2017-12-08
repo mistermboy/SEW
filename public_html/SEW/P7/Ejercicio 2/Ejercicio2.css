@@ -1,0 +1,27 @@
+
+h1{
+    font: 60px Tahoma, sans-serif;
+    line-height: 1.8;
+    color:white;
+    background-color: #7B22F7;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+input[id='wCiudad']{
+     background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+input[id='wCampos']{
+    background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+h3[id='err']{
+    color:red;
+}
+

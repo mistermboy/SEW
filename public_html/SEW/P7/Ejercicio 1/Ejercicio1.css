@@ -1,0 +1,49 @@
+
+h1{
+    font: 60px Tahoma, sans-serif;
+    line-height: 1.8;
+    color:white;
+    background-color: #7B22F7;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+h1[id='rojo']{
+    background-color:red;
+}
+
+h2[id='rojo']{
+    color:red;
+}
+
+p[id='rojo']{
+    color:red;
+}
+
+table{
+    border: 2px solid gray;
+}
+
+
+table[id='rojo']{
+    color:red;
+}
+
+ul[id='rojo']{
+    background-color:red;
+}
+
+li[id='VD']{
+    color:green;
+}
+
+li[id='OK']{
+    color:purple;
+}
+
+li[id='LA']{
+    color:pink;
+}
+ 
+
