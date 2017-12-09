@@ -1,0 +1,26 @@
+body{
+    background-image: url("https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=05fd2730d77844ea89e85e922d6b4c9fd&authkey=AeZCCg18aAuXoi5495Ajiwo&e=77648afea2f5455a8331e85e28b5cfe4");
+     margin: 0 auto;
+}
+
+h1{
+    font: 60px Tahoma, sans-serif;
+    margin: 0px;
+    line-height: 1.8;
+    color:white;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+div[id='mapa-canvas'] {
+        height: 90%;
+        margin: 20px 120px;
+        padding: 200px 0px;
+        border-radius: 20%;
+      }
+
+form{
+    margin: 0 auto;
+}
