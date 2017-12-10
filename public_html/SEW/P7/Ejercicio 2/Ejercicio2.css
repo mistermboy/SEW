@@ -9,19 +9,59 @@ h1{
     letter-spacing: 1px;
 }
 
-input[id='wCiudad']{
-     background-color:transparent;
-    border-color: transparent;
-    color: red;
+
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;    
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
 }
 
-input[id='wCampos']{
-    background-color:transparent;
-    border-color: transparent;
-    color: red;
-}
+ input[type=Button] {
+        margin: 0 auto;
+        background-color: white;
+        color: black;
+        padding: 12px 28px;
+        font-size: 16px;
+        max-width:  15%;
+        max-height: 15%;
+        text-decoration: none;  
+        text-align: right;
+        border-style: solid;
+        border-color: black;
+        margin: 4px 4px; 
+        border-radius: 10%;
+    }
 
-h3[id='err']{
-    color:red;
-}
+ input[type=Button]:hover {
+    background-color: #7BC8FF; 
+    }
 
+    input[type=Button]:active {
+      transform: translateY(5px); 
+    }
+   
+form{
+    margin: 20px 0;
+}

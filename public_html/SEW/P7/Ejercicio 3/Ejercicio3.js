@@ -5,25 +5,21 @@
 class ObtencionDatos{
     
     
-     constructor(){
-        this.apikey = "47b790fd0fc41878c80c57c9846132cb";
-        this.ciudad = '';
-        this.tipo = "&mode=xml";
-        this.unidades = "&units=metric";
-        this.idioma = "&lang=es";
-        this.url = '';
+     constructor(nombre){
+        this.nombre = nombre;
     }
- 
+    
     
     cargarDatos(){
-        $.ajax({
+         $.ajax({
             dataType: "xml",
-            url: this.url,
+            url: this.nombre,
             method: 'GET',
             success: function(datos){
                 
-                    var ciudad                = $('city',datos).attr("name");
-                    var totalNodos            = $('*',datos).length; 
+                    //Pasar el archivo XML a un string
+                    var str = (new XMLSerializer()).serializeToString(datos);
+                    
                     var ciudad                = $('city',datos).attr("name");
                     var longitud              = $('coord',datos).attr("lon");
                     var latitud               = $('coord',datos).attr("lat");
@@ -31,11 +27,11 @@ class ObtencionDatos{
                     var amanecer              = $('sun',datos).attr("rise");
                     var minutosZonaHoraria    = new Date().getTimezoneOffset();
                     var amanecerMiliSeg1970   = Date.parse(amanecer);
-                        amanecerMiliSeg1970  -= minutosZonaHoraria * 60 * 1000;
+                    amanecerMiliSeg1970      -= minutosZonaHoraria * 60 * 1000;
                     var amanecerLocal         = (new Date(amanecerMiliSeg1970)).toLocaleTimeString("es-ES");
                     var oscurecer             = $('sun',datos).attr("set");          
                     var oscurecerMiliSeg1970  = Date.parse(oscurecer);
-                        oscurecerMiliSeg1970  -= minutosZonaHoraria * 60 * 1000;
+                    oscurecerMiliSeg1970     -= minutosZonaHoraria * 60 * 1000;
                     var oscurecerLocal        = (new Date(oscurecerMiliSeg1970)).toLocaleTimeString("es-ES");
                     var temperatura           = $('temperature',datos).attr("value");
                     var temperaturaMin        = $('temperature',datos).attr("min");
@@ -53,60 +49,45 @@ class ObtencionDatos{
                     var nubosidad             = $('clouds',datos).attr("value");
                     var nombreNubosidad       = $('clouds',datos).attr("name");
                     var visibilidad           = $('visibility',datos).attr("value");
-                    var precipitacionValue    = $('precipitation',datos).attr("value");
-                    var precipitacionMode     = $('precipitation',datos).attr("mode");
+                    var precipitacion         = $('precipitation',datos).attr("mode");
                     var descripcion           = $('weather',datos).attr("value");
                     var horaMedida            = $('lastupdate',datos).attr("value");
                     var horaMedidaMiliSeg1970 = Date.parse(horaMedida);
-                        horaMedidaMiliSeg1970 -= minutosZonaHoraria * 60 * 1000;
+                    horaMedidaMiliSeg1970    -= minutosZonaHoraria * 60 * 1000;
                     var horaMedidaLocal       = (new Date(horaMedidaMiliSeg1970)).toLocaleTimeString("es-ES");
                     var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                     
-                        
-                    var stringDatos ="<li>Ciudad: " + ciudad + "</li>";
-                        stringDatos += "<li>País: " + pais + "</li>";
-                    
-                    if(document.getElementById('cLatid').checked){
+             
+                        var  stringDatos = "<li>Ciudad: " + ciudad + "</li>";
+                        stringDatos += "<li>Longitud: " + longitud + " grados</li>";
                         stringDatos += "<li>Latitud: " + latitud + " grados</li>";
-                    }if(document.getElementById('cLong').checked){
-                             stringDatos += "<li>Longitud: " + longitud + " grados</li>";
-                    }if(document.getElementById('cTemp').checked){
-                              stringDatos += "<li>Temperatura (unidades): " + temperaturaUnit + "</li>";
-                    }if(document.getElementById('cTempMax').checked){
-                            stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";
-                    }if(document.getElementById('cTempMin').checked){
-                             stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";     
-                    }if(document.getElementById('cPres').checked){
-                             stringDatos += "<li>Presión: " + presion + " " + presionUnit + "</li>";
-                    }if(document.getElementById('cHum').checked){
-                            stringDatos += "<li>Humedad: " + humedad + " " + humedadUnit + "</li>";
-                    }if(document.getElementById('cAmane').checked){
-                             stringDatos += "<li>Amanece a las: " + amanecerLocal + "</li>";
-                    }if(document.getElementById('cAnoch').checked){
-                            stringDatos += "<li>Oscurece a las: " + oscurecerLocal + "</li>";
-                    }if(document.getElementById('cDv').checked){
-                            stringDatos += "<li>Dirección del viento: " + direccionViento + " grados</li>";
-                    }if(document.getElementById('cVv').checked){
-                            stringDatos += "<li>Velocidad del viento: " + velocidadViento + " metros/segundo</li>";
-                    }if(document.getElementById('cDes').checked){
-                            stringDatos += "<li>Descripción: " + descripcion + "</li>";
-                    }if(document.getElementById('cVis').checked){
-                            stringDatos += "<li>Visibilidad: " + visibilidad + " metros</li>";
-                    }if(document.getElementById('cNubo').checked){
-                             stringDatos += "<li>Nubosidad: " + nubosidad + "</li>";
-                    }if(document.getElementById('cPreci').checked){
-                             stringDatos += "<li>Precipitación: " + precipitacionValue + " mm</li>";
-                    }if(document.getElementById('cLast').checked){
-                             stringDatos += "<li>Última  actualización: " + horaMedidaLocal +" - "+ fechaMedidaLocal+ "</li>";
-                    }   
-                         
-                    $("p").html(stringDatos);
+                        stringDatos += "<li>País: " + pais + "</li>";
+                        stringDatos += "<li>Amanece a las: " + amanecerLocal + "</li>";
+                        stringDatos += "<li>Oscurece a las: " + oscurecerLocal + "</li>";
+                        stringDatos += "<li>Temperatura: " + temperatura + " grados Celsius</li>";
+                        stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";
+                        stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";
+                        stringDatos += "<li>Temperatura (unidades): " + temperaturaUnit + "</li>";
+                        stringDatos += "<li>Humedad: " + humedad + " " + humedadUnit + "</li>";
+                        stringDatos += "<li>Presión: " + presion + " " + presionUnit + "</li>";
+                        stringDatos += "<li>Velocidad del viento: " + velocidadViento + " metros/segundo</li>";
+                        stringDatos += "<li>Nombre del viento: " + nombreViento + "</li>";
+                        stringDatos += "<li>Dirección del viento: " + direccionViento + " grados</li>";
+                        stringDatos += "<li>Código del viento: " + codigoViento + "</li>";
+                        stringDatos += "<li>Nombre del viento: " + nombreDireccionViento + "</li>";
+                        stringDatos += "<li>Nubosidad: " + nubosidad + "</li>";
+                        stringDatos += "<li>Nombre nubosidad: " + nombreNubosidad + "</li>";
+                        stringDatos += "<li>Visibilidad: " + visibilidad + " metros</li>";
+                        stringDatos += "<li>Precipitación: " + precipitacion + "</li>";
+                        stringDatos += "<li>Descripción: " + descripcion + "</li>";
+                        stringDatos += "<li>Hora de la medida: " + horaMedidaLocal + "</li>";
+                        stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li><ul>";
+                    
+                    $("p").html(stringDatos);   
                 },
             error:function(){
-                $("h3").html("La ciudad introducida no es válida"); 
-                $('h3').attr('id','err');
+                $("h3").html("Â¡Tenemos problemas! No se pudo cargar el archivo XML"); 
                 $("h4").remove();
-                $("pre").remove();
                 $("p").remove();
                 }
         });
@@ -118,77 +99,17 @@ class ObtencionDatos{
         elemento.innerHTML = texto;
         $(insertarAntesDe).before(elemento);
     }
+ 
     
     
-    showData(){
-        document.getElementById('wCiudad').style.display='none';
-        document.getElementById('wCampos').style.display='none';
-        var ciudad = this.checkCiudad();
-        var campos = this.checkCampos();
-        this.clearAll();
-        
-        if(ciudad && campos){
-            this.ciudad=document.getElementById('tCiudad').value;
-            this.url="http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
-            this.crearElemento("h3","Datos","footer"); 
-            this.crearElemento("p","","footer");
-            this.cargarDatos();
-            $("button").attr("disabled","disabled");
-        }else{
-            
-            if(!ciudad){
-                document.getElementById('wCiudad').style.display='block';
-                document.getElementById('wCiudad').value='Falta el campo ciudad \n';
-            }
-                
-            if(!campos){
-                document.getElementById('wCampos').style.display='block';
-                document.getElementById('wCampos').value='Seleccione algún campo';
-            }
-            
-        }
+    showData(){  
+        this.crearElemento("h2","Datos","footer"); // Crea un elemento con DOM 
+        this.crearElemento("p","","footer"); // Crea un elemento con DOM para los datos obtenidos con XML
+        this.cargarDatos();
+        $("button").attr("disabled","disabled");
         
     }
-    
-    
-    
-    changeAll(){
-            var campos = document.forms[1];
-            for (var i = 0; i < campos.checks.length; i++) {
-                if(document.getElementById('cAll').checked){
-                    campos.checks[i].checked=true;
-                }else{
-                    campos.checks[i].checked=false;
-                }
-                 
-            }  
-    }
-    
-    
-    checkCiudad(){
-        if(document.getElementById('tCiudad').value==""){
-            return false;
-        }
-        return true;
-    }
-    
-    
-    checkCampos(){
-        var campos = document.forms[1];
-        for (var i = 0; i < campos.checks.length; i++) {
-            if(campos.checks[i].checked){
-                return true;
-            }
-        }
-        return false;
-    }
-    
-    
-    clearAll(){
-         $("h3").remove();
-         $("p").remove();
-    }
-    
+      
 }
 
-var d = new ObtencionDatos();
+var d = new ObtencionDatos('Oviedo.xml');

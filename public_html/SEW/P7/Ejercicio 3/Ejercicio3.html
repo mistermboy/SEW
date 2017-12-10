@@ -15,67 +15,12 @@
         <h1> Obtención de datos metereológicos</h1> 
     </header>
    
-   <h2>Introduzca los datos necesarios para la búsqueda</h2>
-    
-    
     <form>
-    
-        <label for='tCiudad'>Ciudad(española): <input type="text" id='tCiudad' value=""></label>
-        
-    </form>
-    
-    <form id='pref'>Seleccionar datos deseados
-        
-         <label for='cAll'><input type="checkbox" id="cAll"  onchange='d.changeAll()'>Todos</label>
-        
-        
-         <br>
-        <label for='cLatid'><input type="checkbox" name="checks" id="cLatid"  >Latitud</label>
-        <label for='cLong'><input type="checkbox" name="checks" id="cLong" >Longitud</label>
-        
-      <br>
-        <label for='cTemp'><input type="checkbox" name="checks" id="cTemp" >Temperatura</label>
-         <label for='cTempMax'><input type="checkbox" name="checks" id="cTempMax" >Temperatura Máxima</label>
-         <label for='cTempMin'><input type="checkbox" name="checks" id="cTempMin" >Temperatura Mínima</label>
-    <br>
-        <label for='cPres'><input type="checkbox" name="checks" id="cPres" >Presion</label>
-        <label for='cHum'><input type="checkbox" name="checks" id="cHum" >Humedad</label>
-        
-    <br>
-        <label for='cAmane'><input type="checkbox" name="checks" id="cAmane" >Amanecer</label>
-        <label for='cAnoch'><input type="checkbox" name="checks" id="cAnoch" >Anochecer</label>
-        
-     <br>
-        <label for='cDv'><input type="checkbox" name="checks" id="cDv" >Direccion del viento</label>
-        <label for='cVv'><input type="checkbox" name="checks" id="cVv" >Velocidad del viento</label>
-        
-    <br>
-        <label for='cVis'><input type="checkbox" name="checks" id="cVis" >Visibilidad</label>
-        <label for='cNubo'><input type="checkbox" name="checks" id="cNubo" >Nubosidad</label>
-        
-    <br>
-        <label for='cPreci'><input type="checkbox" name="checks" id="cPreci" >Precipitación en milímetros</label>    
-        
-    <br>
-        <label for='cDes'><input type="checkbox" name="checks" id="cDes" >Breve descripción del tiempo</label>
-    <br>
-        <label for='cLast'><input type="checkbox" name="checks" id="cLast" >Última actualización</label>   
-
-    </form>
-    
-    <form>
-
-        
-        <br>
-            <input type="text" id='wCiudad' style="display: none" value=" ">
-        <br>
-            <input type="text" id='wCampos' style="display: none" value=" ">
-        
-        <br>
             <input type="button" value="Obtener datos" onClick='d.showData()'>
         
         </form>
-   
+
+    
     <footer>
 
 </footer>
