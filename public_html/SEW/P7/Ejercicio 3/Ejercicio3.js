@@ -57,32 +57,44 @@ class ObtencionDatos{
                     var horaMedidaLocal       = (new Date(horaMedidaMiliSeg1970)).toLocaleTimeString("es-ES");
                     var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                     
-             
-                        var  stringDatos = "<li>Ciudad: " + ciudad + "</li>";
-                        stringDatos += "<li>Longitud: " + longitud + " grados</li>";
-                        stringDatos += "<li>Latitud: " + latitud + " grados</li>";
+                
+                    var  stringDatos = "<li>Ciudad: " + ciudad + "</li>";
                         stringDatos += "<li>País: " + pais + "</li>";
-                        stringDatos += "<li>Amanece a las: " + amanecerLocal + "</li>";
-                        stringDatos += "<li>Oscurece a las: " + oscurecerLocal + "</li>";
-                        stringDatos += "<li>Temperatura: " + temperatura + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura (unidades): " + temperaturaUnit + "</li>";
-                        stringDatos += "<li>Humedad: " + humedad + " " + humedadUnit + "</li>";
-                        stringDatos += "<li>Presión: " + presion + " " + presionUnit + "</li>";
-                        stringDatos += "<li>Velocidad del viento: " + velocidadViento + " metros/segundo</li>";
-                        stringDatos += "<li>Nombre del viento: " + nombreViento + "</li>";
-                        stringDatos += "<li>Dirección del viento: " + direccionViento + " grados</li>";
-                        stringDatos += "<li>Código del viento: " + codigoViento + "</li>";
-                        stringDatos += "<li>Nombre del viento: " + nombreDireccionViento + "</li>";
-                        stringDatos += "<li>Nubosidad: " + nubosidad + "</li>";
-                        stringDatos += "<li>Nombre nubosidad: " + nombreNubosidad + "</li>";
-                        stringDatos += "<li>Visibilidad: " + visibilidad + " metros</li>";
-                        stringDatos += "<li>Precipitación: " + precipitacion + "</li>";
-                        stringDatos += "<li>Descripción: " + descripcion + "</li>";
-                        stringDatos += "<li>Hora de la medida: " + horaMedidaLocal + "</li>";
-                        stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li><ul>";
-                    
+    
+                
+                     if(document.getElementById('cLatid').checked){
+                             stringDatos += "<li>Latitud: " + latitud+ " grados</li>";
+                        }if(document.getElementById('cLong').checked){
+                                 stringDatos += "<li>Longitud: " + longitud + " grados</li>";
+                        }if(document.getElementById('cTemp').checked){
+                                 stringDatos += "<li>Temperatura: " +temperatura + " grados Celsius</li>";
+                        }if(document.getElementById('cTempMax').checked){
+                                 stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";      
+                        }if(document.getElementById('cTempMin').checked){
+                                 stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";
+                        }if(document.getElementById('cPres').checked){
+                                 stringDatos += "<li>Presión: " + presion + " " + presionUnit  + "</li>";
+                        }if(document.getElementById('cHum').checked){
+                                stringDatos += "<li>Humedad: " +humedad + " " + humedadUnit +  " %</li>";
+                        }if(document.getElementById('cAmane').checked){
+                                stringDatos += "<li>Amanece a las: " + amanecerLocal + "</li>";
+                        }if(document.getElementById('cAnoch').checked){
+                                 stringDatos += "<li>Oscurece a las: " + oscurecerLocal + "</li>";
+                        }if(document.getElementById('cDv').checked){
+                                stringDatos += "<li>Dirección del viento: " + direccionViento + " grados</li>";
+                        }if(document.getElementById('cVv').checked){
+                            stringDatos += "<li>Velocidad del viento: " + velocidadViento + " metros/segundo</li>";
+                        }if(document.getElementById('cDes').checked){
+                                stringDatos += "<li>Descripción: " +descripcion+ "</li>";    
+                        }if(document.getElementById('cVis').checked){
+                                stringDatos += "<li>Visibilidad: " + visibilidad + " metros</li>";
+                        }if(document.getElementById('cNubo').checked){
+                                stringDatos += "<li>Nubosidad: " +nubosidad + " %</li></ul>";
+                        }if(document.getElementById('cPreci').checked){
+                                stringDatos += "<li>Precipitación: " +precipitacion + "</li></ul>";
+                        }  
+             
+                             
                     $("p").html(stringDatos);   
                 },
             error:function(){
@@ -101,15 +113,65 @@ class ObtencionDatos{
     }
  
     
-    
-    showData(){  
-        this.crearElemento("h2","Datos","footer"); // Crea un elemento con DOM 
-        this.crearElemento("p","","footer"); // Crea un elemento con DOM para los datos obtenidos con XML
-        this.cargarDatos();
-        $("button").attr("disabled","disabled");
+
+     
+    showData(){
+        document.getElementById('wCampos').style.display='none';
+        var campos = this.checkCampos();
+        this.clearAll();
+        
+        if(campos){
+            this.ciudad='Oviedo.xml';
+            this.url="http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+            this.crearElemento("h3","Datos","footer"); 
+            this.crearElemento("p","","footer");
+            this.cargarDatos();
+            $("button").attr("disabled","disabled");
+        }else{
+               
+            if(!campos){
+                document.getElementById('wCampos').style.display='block';
+                document.getElementById('wCampos').value='Seleccione algún campo';
+            }
+            
+        }
         
     }
-      
+    
+    
+    
+    changeAll(){
+            var campos = document.forms[0];
+            for (var i = 0; i < campos.checks.length; i++) {
+                if(document.getElementById('cAll').checked){
+                    campos.checks[i].checked=true;
+                }else{
+                    campos.checks[i].checked=false;
+                }
+                 
+            }  
+    }
+    
+
+    
+    checkCampos(){
+        var campos = document.forms[0];
+        for (var i = 0; i < campos.checks.length; i++) {
+            if(campos.checks[i].checked){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
+    clearAll(){
+         $("h3").remove();
+         $("p").remove();
+    }
+    
 }
+      
+
 
 var d = new ObtencionDatos('Oviedo.xml');
