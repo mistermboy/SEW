@@ -40,6 +40,11 @@ h3{
     letter-spacing: 1px;
 }
 
+h3[id='hResult']{
+    color:#D9E868;
+}
+
+
 
 div[id='mapa-canvas'] {
         height: 90%;
@@ -76,6 +81,15 @@ div[id='B'] {
         padding: 200px 0px;
         border-radius: 20px;
         background-color: #C8C3C9;
+        padding: 5px;
+      }
+
+
+div[id='dif'] {
+        height: 90%;
+        margin: 50px 700px;
+        border-radius: 20px;
+        background-color: transparent;
         padding: 5px;
       }
 
@@ -199,6 +213,8 @@ input[id='btnComenzar']{
 
     input[id='btnAgain']{
            border-color: brown;
+            color:white;
+            margin: 100px 500px;
     }
 
 

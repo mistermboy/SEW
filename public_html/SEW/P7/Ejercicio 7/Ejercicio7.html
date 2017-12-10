@@ -14,18 +14,18 @@
    
     <header>
         <h1 id='t1' style="display: none">¿Cuanto sabes de Asturias? </h1>
-        <h1 id='t2' style="display: block">¿Cuanto sabes de Asturias?
-            <div id='dif'>Dificultad: <select id='sDificultad' onchange="selectCiudad()"> 
+        <h1 id='t2' style="display: block">¿Cuanto sabes de Asturias?</h1>
+    </header>
+    
+    <div id='dif' style="display: inline">Dificultad: <select id='sDificultad' onchange="selectCiudad()"> 
                         <option value="Fa">Facil</option>
                         <option value="Me">Medio</option>
                         <option value="Di">Dificl</option>
             </select>
-            </div>
             <input type="button" id='btnComenzar' value='COMENZAR' onclick='start()'>
-        </h1>
-    </header>
+            </div>
     
-    <h3> </h3>
+    <h3 id='hResult' style="display: none">Resultado:</h3>
     
     <main id='controls' style="display: none">
     
@@ -33,7 +33,7 @@
       <input class='mostrar' type='text' id='ciud' value=" " disabled>
         </h2>
         
-        <h2 id='s2'> </h2>
+        <h2 id='s2' style="display: none">¡</h2>
         
         <form id="panel" style="display: block">
             <div id='pnl'>

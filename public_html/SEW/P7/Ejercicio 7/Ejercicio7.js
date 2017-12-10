@@ -199,14 +199,9 @@ function start(){
     document.getElementById('s1').style.display='block';
     document.getElementById('corre').style.display='none';
     document.getElementById('fin').style.display='none';
+    document.getElementById('dif').style.display='none';
     document.getElementById('punt').value=puntuacion;
     
-    
-     for(var i=0;i<nombres.length;i++){
-        console.log(nombres[i]);
-         console.log(lati[i]);
-         console.log(long[i]);
-    }
     
     initialize();
    
@@ -260,6 +255,7 @@ function finish(){
         result=F4;
     }
     
+    $("h3").attr('style','display:block'); 
     $("h3").append(result+punt); 
     
      document.getElementById('B').style.display='none';
