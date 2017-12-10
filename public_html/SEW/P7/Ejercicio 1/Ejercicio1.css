@@ -9,16 +9,8 @@ h1{
     letter-spacing: 1px;
 }
 
-h1[id='rojo']{
-    background-color:red;
-}
-
-h2[id='rojo']{
-    color:red;
-}
-
-p[id='rojo']{
-    color:red;
+.rojo{
+    color:red
 }
 
 table{
@@ -26,13 +18,6 @@ table{
 }
 
 
-table[id='rojo']{
-    color:red;
-}
-
-ul[id='rojo']{
-    background-color:red;
-}
 
 li[id='VD']{
     color:green;

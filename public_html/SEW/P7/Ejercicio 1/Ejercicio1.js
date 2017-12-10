@@ -11,7 +11,7 @@ $(document).ready(function(){
      $('p').show();
    });
     $("#btnModificarP").click(function(){
-     $('p').attr('id','rojo');
+     $('p').attr('class','rojo');
    });
      $("#btnEliminarP").click(function(){
      $("p").remove();
@@ -26,7 +26,7 @@ $(document).ready(function(){
      $('h1').show();
    });
     $("#btnModificarH1").click(function(){
-     $('h1').attr('id','rojo');
+     $('h1').attr('class','rojo');
    });
     $("#btnEliminarH1").click(function(){
      $("h1").remove();
@@ -41,7 +41,7 @@ $(document).ready(function(){
      $('h2').show();
    });
      $("#btnModificarH2").click(function(){
-     $('h2').attr('id','rojo');
+     $('h2').attr('class','rojo');
    });
     $("#btnEliminarH2").click(function(){
      $("h2").remove();
@@ -57,7 +57,7 @@ $(document).ready(function(){
      $('table').show();
    });
      $("#btnModificarT").click(function(){
-     $('table').attr('id','rojo');
+     $('table').attr('class','rojo');
    });
     $("#btnEliminarT").click(function(){
      $("table").remove();
@@ -71,7 +71,7 @@ $(document).ready(function(){
      $('ul').show();
    });
     $("#btnModificarLis").click(function(){
-     $('ul').attr('id','rojo');
+     $('ul').attr('class','rojo');
    });
     $("#btnEliminarLis").click(function(){
      $("ul").remove();
@@ -85,7 +85,7 @@ $(document).ready(function(){
      $('#D').show();
    });
     $("#btnModificarD").click(function(){
-     $('#D').attr('id','VD');
+     $('#D').attr('class','VD');
    });
     $("#btnEliminarD").click(function(){
      $("#D").remove();
@@ -99,7 +99,7 @@ $(document).ready(function(){
      $('#O').show();
    });
     $("#btnModificarO").click(function(){
-     $('#O').attr('id','OK');
+     $('#O').attr('class','OK');
    });
     $("#btnEliminarO").click(function(){
      $("#O").remove();
@@ -113,7 +113,7 @@ $(document).ready(function(){
      $('#L').show();
    });
     $("#btnModificarL").click(function(){
-     $('#L').attr('id','LA');
+     $('#L').attr('class','LA');
    });
     $("#btnEliminarL").click(function(){
      $("#L").remove();
