@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+
+	<city>
+	
+		<name>Oviñana</name>
+		<lat> 43.3547942</lat>
+		<lon>-6.3642897</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Olloniego</name>
+		<lat>43.3085079</lat>
+		<lon>-5.8364115</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Belmonte</name>
+		<lat> 43.2822643</lat>
+		<lon> -6.2224375</lon>
+		
+    </city>
+	
+		<city>
+	
+			<name>Selorio</name>
+			<lat>43.5130989</lat>
+			<lon>-5.3803749</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+			<name>Cadavedo</name>
+			<lat> 43.5473129</lat>
+			<lon>-6.3876631</lon>
+		
+    </city>
+		
+		
+			<city>
+	
+			<name>Porciles</name>
+			<lat>43.3021089</lat>
+			<lon>-6.5999135</lon>
+		
+    </city>
+		
+	
+	
+</current>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+
+	<city>
+	
+		<name>Luarca</name>
+		<lat> 43.5438063</lat>
+		<lon>-6.5342121</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Pravia</name>
+		<lat>43.4820138</lat>
+		<lon>-6.2201366</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Cudillero</name>
+		<lat> 43.5595783</lat>
+		<lon> -6.1524197</lon>
+		
+    </city>
+	
+		<city>
+	
+			<name>Langreo</name>
+			<lat>43.3047594</lat>
+			<lon>-5.7142037</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+			<name>Luanco</name>
+			<lat>43.617439</lat>
+			<lon>-5.8038205</lon>
+		
+    </city>
+		
+		
+			<city>
+	
+			<name>Salinas</name>
+			<lat>43.5756244</lat>
+			<lon>-5.9601649</lon>
+		
+    </city>
+		
+	
+	
+</current>

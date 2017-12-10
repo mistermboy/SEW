@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+
+	<city>
+	
+		<name>Gijon</name>
+		<lat> 43.5314853</lat>
+		<lon> -5.7034739</lon>
+		
+    </city>
+
+
+	<city>
+	
+		<name>Oviedo</name>
+		<lat>43.3694815</lat>
+		<lon>-5.8836772</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Aviles</name>
+		<lat>43.5574496</lat>
+		<lon>-5.93553</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+		<name>Llanes</name>
+		<lat>43.4201498</lat>
+		<lon> -4.7615676</lon>
+		
+    </city>
+	
+		<city>
+	
+			<name>Mieres</name>
+			<lat>43.2455441</lat>
+			<lon>-5.7940835</lon>
+		
+    </city>
+	
+	
+		<city>
+	
+			<name>Cangas</name>
+			<lat>43.1815196</lat>
+			<lon>-6.5578828</lon>
+		
+    </city>
+		
+	
+	
+</current>

@@ -10,7 +10,17 @@ var puntuacion=0;
 var turno=0;
 var numMarcadores=0;
 
+var estrella='https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=0feb02ef99d28475f83d75d27665a20ed&authkey=AcQIOWm0w2Mn70FO83jYP9Y&e=7e912ad014904de78279f32dbc8b6acb';
+
+
+var nombres = new Array();
+var lati = new Array();
+var long = new Array();
+    
+var xml='CiudadesFaciles.xml';
+
 var ciudades;
+
 
 var mapaOpciones = {
     zoom: fixedZoom,
@@ -26,76 +36,8 @@ var mapaOpciones = {
   };
 
 
- var estrella='https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=0feb02ef99d28475f83d75d27665a20ed&authkey=AcQIOWm0w2Mn70FO83jYP9Y&e=7e912ad014904de78279f32dbc8b6acb';
 
 
-
-var ciudadesFaciles = {
-    
-        Gijon: {
-          center: {lat: 43.5314853, lng: -5.7034739}
-        },
-        Oviedo:{
-            center: {lat: 43.3694815, lng: -5.8836772}
-        },
-        Aviles:{
-            center: {lat: 43.5574496, lng: -5.93553}
-        },
-        Llanes:{
-            center: {lat: 43.4201498, lng: -4.7615676}
-        },
-        Mieres:{
-            center: {lat: 43.2455441, lng: -5.7940835}
-        },
-        Cangas:{
-            center: {lat: 43.1815196, lng: -6.5578828}
-        }
-};
-
-
-var ciudadadesMedias = {
-       Luarca: {
-          center: {lat: 43.5438063, lng: -6.5342121}
-        },
-        Pravia:{
-            center: {lat: 43.4820138, lng: -6.2201366}
-        },
-        Cudillero:{
-            center: {lat: 43.5595783, lng: -6.1524197}
-        },
-        Langreo:{
-            center: {lat: 43.3047594, lng: -5.7142037}
-        },
-        Luanco:{
-            center: {lat: 43.617439, lng: -5.8038205}
-        },
-        Salinas:{
-            center: {lat: 43.5756244, lng: -5.9601649}
-        }
-}
-
-var ciudadesDificiles = {
-    
-        Oviñana: {
-          center: {lat: 43.3547942, lng: -6.3642897}
-        },
-        Olloniego:{
-            center: {lat: 43.3085079, lng: -5.8364115}
-        },
-        Belmonte:{
-            center: {lat: 43.2822643, lng: -6.2224375}
-        },
-        Selorio:{
-            center: {lat: 43.5130989, lng: -5.3803749}
-        },
-        Cadavedo:{
-            center: {lat: 43.5473129, lng: -6.3876631}
-        },
-        Porciles:{
-            center: {lat: 43.3021089, lng: -6.5999135}
-        }
-    
-}
 
 
 function initialize() {
@@ -131,17 +73,14 @@ function activarMarcadores(mapa) {
 }
 
 
-// Oculta todos los marcadores, pero siguen almacenados en el array 
 function ocultarMarcadores() {
   activarMarcadores(null);
 }
-
-// Mostrar todos los marcadores del array    
+  
 function mostrarMarcadores() {
   activarMarcadores(mapa);
 }
 
-// Oculta los marcadores y después los elimina del array
 function eliminarMarcadores() {
   ocultarMarcadores();
   marcadores = [];
@@ -149,7 +88,7 @@ function eliminarMarcadores() {
 
 
 function corregir(){
-    var location = new google.maps.LatLng(ciudades[getCiudad()].center.lat,ciudades[getCiudad()].center.lng);
+    var location = new google.maps.LatLng(lati[turno],long[turno]);
      var marker = new google.maps.Marker({
             position: location,
             icon: estrella,
@@ -208,7 +147,7 @@ function restablecer(){
 
 
 function calcPuntuacion(){
-    var location = new google.maps.LatLng(ciudades[getCiudad()].center.lat,ciudades[getCiudad()].center.lng);
+    var location = new google.maps.LatLng(lati[turno],long[turno]);
    var  distance = google.maps.geometry.spherical.computeDistanceBetween(location,marcadores[0].position);
     
     if(distance<10000){
@@ -227,30 +166,15 @@ function calcPuntuacion(){
 
 function getCiudad(){
     var cont=0;
-    for(var ciudad in ciudades){
+    for(var i=0;i<nombres.length;i++){
         if(turno==cont){
-            return ciudad;
+            return nombres[i];
         }
         cont++;
     }
 }
 
 function mostrarCiudad(){
-    var select =  document.getElementById('sDificultad');
-    var str = select.options[select.selectedIndex].value;
-   
-    if(str=='Fa'){
-        ciudades=ciudadesFaciles;
-    }
-    
-    if(str=='Me'){
-        ciudades=ciudadadesMedias;
-    }
-    
-    if(str=='Di'){
-        ciudades=ciudadesDificiles;
-    }
-    
     var ciudad = getCiudad();
     if(ciudad=='cangas'){
          document.getElementById('ciud').value='cangas de narcea';
@@ -277,7 +201,13 @@ function start(){
     document.getElementById('fin').style.display='none';
     document.getElementById('punt').value=puntuacion;
     
-
+    
+     for(var i=0;i<nombres.length;i++){
+        console.log(nombres[i]);
+         console.log(lati[i]);
+         console.log(long[i]);
+    }
+    
     initialize();
    
 }
@@ -345,6 +275,62 @@ function reStart(){
      document.getElementById('t2').style.display='block';
      document.getElementById('t1').style.display='none';
 }
+
+
+function cargarCiudades(){
+    nombres = new Array();
+    lati = new Array();
+    long = new Array();
+   
+    console.log(xml);
+     $.ajax({
+            dataType: "xml",
+            url: xml,
+            method: 'GET',
+            success: function(datos){
+                
+                
+                 var i=0;
+                 $("city", datos).each(function(){
+                     console.log()
+                     nombres[i] = $('name',this).text();
+                     lati[i] = $("lat",this).text();
+                     long[i] = $("lon",this).text();
+                     i++;
+                });    
+                
+            
+                       
+                },
+            error:function(){
+                $("h3").html("Â¡Tenemos problemas! No se pudo cargar el archivo XML"); 
+                $("h4").remove();
+                $("p").remove();
+                }
+        });
+}
+
+
+function selectCiudad(){
+    var select =  document.getElementById('sDificultad');
+    var str = select.options[select.selectedIndex].value;
+    if(str=='Fa'){
+        xml='CiudadesFaciles.xml';
+    }
+    
+    if(str=='Me'){
+        xml='CiudadesMedias.xml';
+    }
+    
+    if(str=='Di'){
+        xml='CiudadesDificiles.xml';
+    }
+    cargarCiudades();
+}
+
+
+
+google.maps.event.addDomListener(window, 'load', cargarCiudades);
 
 
 

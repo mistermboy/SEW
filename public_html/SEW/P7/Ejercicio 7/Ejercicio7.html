@@ -6,7 +6,7 @@
     <meta name="description" content="Ejercicio 7 de la P7"/>
     <title>Juego mapas</title>
      <link rel="stylesheet" href="Ejercicio7.css"/>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2XaCSWz7UH_52CMcbJ5y6PvB8Z1Uc6wA&libraries=geometry"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="Ejercicio7.js"></script>
 </head>
@@ -15,7 +15,7 @@
     <header>
         <h1 id='t1' style="display: none">¿Cuanto sabes de Asturias? </h1>
         <h1 id='t2' style="display: block">¿Cuanto sabes de Asturias?
-            <div id='dif'>Dificultad: <select id='sDificultad'> 
+            <div id='dif'>Dificultad: <select id='sDificultad' onchange="selectCiudad()"> 
                         <option value="Fa">Facil</option>
                         <option value="Me">Medio</option>
                         <option value="Di">Dificl</option>
