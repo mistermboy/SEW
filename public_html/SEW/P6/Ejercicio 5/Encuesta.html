@@ -20,8 +20,9 @@
      
     <main>
         
+      
         
-        <section style="display:block" id="sFormulario" >
+        <section style="display:block" id="sFormulario">
     
         <h2>A continuación se muestran las diferentes preguntas que el usuario deberá reponder
         para evaluar la calculadora científica desarrollada en la práctica anterior. Responder
@@ -31,6 +32,7 @@
         <h3>(ES OBLIGATORIO RESPONDER A TODAS LAS PREGUNTAS)</h3>
         
         
+      
         <div class="sPreguntas">
             <form class="preguntas" onchange="e.actualizaPreguntas()">   
             <br>   
@@ -579,9 +581,14 @@
                 <input type="text" id="result" />
                 <p>Se le ha enviado un email a su correo con sus datos y el resultado de la encuesta. Gracias por su tiempo.</p>
             
-             <input type="Button" class="btnRestart" name="btnRestart" value=" Realizar de nuevo la encuesta " onclick="e.start()" />
+            <form action="mailto:UO252406@uniovi.es" method="post">
+            
+             <input type="Button" class="btnRestart" name="btnRestart" value=" Realizar de nuevo la encuesta " onclick="e.start()"/>
+                
+                </form>
             
         </section>
+            
                               
     </main>
 

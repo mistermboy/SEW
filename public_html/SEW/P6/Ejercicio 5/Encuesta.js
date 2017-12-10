@@ -48,7 +48,8 @@ class Encuesta{
                  this.showErrores();
              }else{
                  this.sendEmail();
-             }      
+                 event.returnValue=false;
+             }   
          }
     
         checkNombre(){
@@ -176,6 +177,7 @@ class Encuesta{
             document.getElementById('sFormulario').style.display='none';
             document.getElementById('sResultado').style.display='block';
             document.getElementById('result').value=this.media;
+            window.location.href = "mailto:UO252406@uniovi.es";
         }
     
         start(){
