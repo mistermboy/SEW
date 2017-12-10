@@ -1,4 +1,21 @@
 
+input[id='wCiudad']{
+     background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+input[id='wCampos']{
+    background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+h3[id='err']{
+    color:red;
+}
+
+
 h1{
     font: 60px Tahoma, sans-serif;
     line-height: 1.8;
