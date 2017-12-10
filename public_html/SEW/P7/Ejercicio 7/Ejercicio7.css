@@ -1,0 +1,206 @@
+body{
+    background-color: black;
+     margin: 0 auto;
+}
+
+h1{
+    font: 60px Tahoma, sans-serif;
+    margin: 0px;
+    line-height: 1;
+    color:brown;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+div[id='dif']{
+    font: 30px Tahoma, sans-serif;
+    color:white;
+}
+
+
+h2{
+    font: 40px Tahoma, sans-serif;
+    margin: 0px;
+    color:white;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+h3{
+    font: 40px Tahoma, sans-serif;
+    margin: 0px;
+    color:white;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+
+div[id='mapa-canvas'] {
+        height: 90%;
+        margin: 10px 10px;
+        padding: 200px 0px;
+        border-radius: 20px;
+      }
+
+
+div[id='S'] {
+        height: 90%;
+        margin: 10px 10px;
+        padding: 200px 0px;
+        border-radius: 20px;
+        background-color: black;
+        padding: 3px;
+      }
+
+
+
+
+div[id='M'] {
+        height: 90%;
+        margin: 10px 10px;
+        padding: 200px 0px;
+        border-radius: 20px;
+        background-color: brown;
+        padding: 5px;
+      }
+
+div[id='B'] {
+        height: 90%;
+        margin: 20px 300px;
+        padding: 200px 0px;
+        border-radius: 20px;
+        background-color: #C8C3C9;
+        padding: 5px;
+      }
+
+
+
+form{
+        font: 20px Tahoma, sans-serif;
+        height: 90%;
+        margin: 0px 20px;
+        padding: 200px 0px;
+        border-radius: 20px;
+        background-color: black;
+        padding: 5px;
+        color:white;
+}
+
+
+div[id='pnl']{
+    margin: 0px 500px;
+    background-color: transparent;
+}
+
+div[id='btnRe']{
+    margin: 0px 600px;
+    background-color: transparent;
+}
+
+
+input.accion{
+        background-color: brown;
+        color: black;
+        padding: 12px 18px;
+        font-size: 16px;
+        max-width:  20%;
+        max-height: 15%;
+        text-decoration: none;  
+        text-align: right;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10%;
+}
+
+input.puntua{
+        background-color: transparent;
+        color: White;
+        padding: 12px 18px;
+        font-size: 40px;
+        max-width:  20%;
+        max-height: 15%;
+   
+        text-decoration: none;  
+        text-align: left;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10%;
+}
+
+
+input.mostrar{
+        background-color: transparent;
+        color: #D9E868;
+        padding: 12px 18px;
+        font-size: 40px;
+        max-width:  20%;
+        max-height: 15%;
+   
+        text-decoration: none;  
+        text-align: left;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10%;
+}
+
+
+input.replay{
+        background-color: transparent;
+        color: #D9E868;
+        padding: 12px 18px;
+        font-size: 30px;
+        max-width:  20%;
+        max-height: 15%;
+        margin: 0 auto;
+        text-decoration: none;  
+        text-align: left;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10%;
+}
+
+
+
+input[id='btnComenzar']{
+        background-color: brown;
+        color: black;
+        padding: 12px 28px;
+        font-size: 16px;
+        max-width:  15%;
+        max-height: 15%;
+        text-decoration: none;  
+        text-align: right;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10%;
+}
+
+
+    input[type=Button]:hover {
+    background-color: #7BC8FF; 
+    }
+
+
+    
+    input[type=Button]:active {
+      transform: translateY(5px); 
+    }
+
+
+    input[id='sig']{
+            background-color: #D9E868;
+    }
+
+    input[id='btnAgain']{
+           border-color: brown;
+    }
+
+
+
+
