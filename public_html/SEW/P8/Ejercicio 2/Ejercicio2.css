@@ -1,0 +1,79 @@
+body{
+    font: 18px Tahoma, sans-serif;
+    line-height: 1.8;
+    color:333;
+    background-image: url('https://unioviedo-my.sharepoint.com/personal/uo252406_uniovi_es/_layouts/15/guestaccess.aspx?docid=02e17de3f2d604ea89623038a83795a6d&authkey=AZdHb2eIhOXvoU3sO0tvnQ0&e=cabe80fc97664bcd8c40bbe6a4f4814c');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+header{
+     background-color: transparent;
+}
+
+ input[type=submit] {
+        background-color: white;
+        color: black;
+        padding: 12px 28px;
+        font-size: 12px;
+        max-width:  25%;
+        max-height: 15%;
+        text-decoration: none;  
+        text-align: right;
+        border-style: solid;
+        border-color: black;
+        margin: 4px 4px; 
+        border-radius: 10%;
+    }
+
+  input[type=text] { 
+        background: #86F292;
+        color: black;
+        font-size: 12px;
+        text-align: right;
+        border-radius: 10px;
+        padding: 16px 32px;
+        margin: 7px;
+    }
+
+
+    input[type=submit]:hover {
+    background-color: #7BC8FF; 
+    }
+
+
+    
+    input[type=submit]:active {
+      transform: translateY(5px); 
+    }
+
+    form[id='inserccion']{
+        margin-right: 1000px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: white;
+    }
+
+form[id='busqueda']{
+     margin-right: 1000px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: white;
+}
+
+form[id='eliminacion']{
+        margin-right: 1000px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: white;
+}
+
+ul{
+        margin-right: 1000px;
+        background-color: #86F292;
+        border-style: solid;
+        border-color: white;
+}

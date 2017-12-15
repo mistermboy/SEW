@@ -1,0 +1,73 @@
+
+Examen: Que significa $ en JQuery? - Constructor de JQUery, construye los objetos de JQuery
+Puedo cambiar el dolar por JQuery? - Si porque puede haber otra libreria que utilize el $
+
+EJERCICIO 1: HAY QUE SELECCIONAR UNA ESTRUCTURA COMPLEJA EJ TABLA
+
+
+El objetivo de este ejercicio es practicar- no comerse la cabeza
+
+
+TODAS LAS TAREAS EN EL MISMO ARCHIVO (O OBJETOS O FUNCIONAL PURO, SOLO UN PARADIGMA)
+
+#####Tarea 1:#######
+
+*Ej26
+
+$(document)-cargamos en memoria todo lo que hay en el html
+$(Objeto) - Seleccionamos el objeto (selector)
+ready- cargado
+function()-función anónima
+click() de JQuery no es lo mismo que onClick() de ECMascript
+hide() - ocultar
+
+*Ej27
+
+show(); - Mostrar
+$("#mostrar") - Referencia al elemento que tenga como id mostrar
+
+*Ej:72
+Otra manera de hacer lo de antes
+utiliza el onclik() de ECMascript
+
+*Ej43
+  -Modificar css
+
+*Ej71
+  -Ocultar elementos más complejos
+  - El script está en el body, después de la tabla
+each() - para recorrer elementos de html (Significado: para cada uno)
+$(this) - Referencia al elemento de la estructura que estás recorriendo
+$.trim - Llamada a la función trim de JQuery Recortar los espacios en blanco (al final de una cadena?)
+text() - Devuelve el texto que hay dentro de un elemento html
+
+
+*Ej 75
+   -Ocultar elementos dentro de una clasificación. Atributo class
+   -Hay que poner un punto delante de las class para referenciarlas
+
+#####Tarea 2:#######
+
+MODDIFICAR TODO: ELEMENTOS, ATRIBUTOS, CSS
+
+Ejercicios:del 76 al 82
+
+val(): Establece (set) o devuelve (get) el valor contenido en un campo de un formulario
+text(): Establece (set) o devuelve (get) el texto contenido en los elementos seleccionados
+html(): Establece (set) o devuelve (get) el contenido HTML en los elementos seleccionados
+attr(): Establece (set) o devuelve (get) atributos (value) de los elementos seleccionados
+
+
+#####Tarea 3 y 4:#######
+
+Ej 82
+   
+
+#####Tarea 5:#######
+
+Ej 83:
+"*" selecciona todo
+("*", document.body) selecciona todo lo del body
+get(0)  Padre
+get(1)	Abuelo
+get(2)	Espiritu santo

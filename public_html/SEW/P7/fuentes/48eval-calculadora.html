@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora usando eval</title>
+</head>
+
+<body>
+ <h1> Calculadora usando eval()</h1>
+<p>Introduzca una expresión en JavaScript y será evaluada</p> 
+ <input type="text" id="expresion" />
+ <input type="button" value="evaluar" onclick="calc()" />
+ <input type="text" id="resultado" disabled />
+<script>
+ function calc(){
+    str = document.getElementById('expresion').value;
+    document.getElementById('resultado').value = eval(str);
+}
+</script>
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>
+

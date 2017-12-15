@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 2</title>
+    <meta charset="utf-8"/>
+    
+    <meta name="author" content="UO252406" /> 
+
+    <link href="Ejercicio2.css" rel="stylesheet" />
+</head>
+    
+<body>
+
+      <header>
+    
+         <form  action="crearDB.php">
+            <input type="submit" value="Crear la base de datos: StarWars">
+         </form>
+
+        <form  action="crearTabla.php">
+             <input type="submit" value="Crear la tabla: JEDI">
+        </form>
+
+        <form action="Ejercicio2.html">
+                 <input type="submit" value="DATOS">
+            </form>
+    </header>
+        <h2>INSERCCIÓN</h2>
+    
+         <form id='inserccion'method="post" action="insert.php">
+                Código galáctico:<input type="text" name="galacticCode"> <br>
+                Nombre: <input type="text" name="nombre"> <br>
+                Raza: <input type="text" name="raza"> <br>
+                Color de sable: <input type="text" name="colorSable"> <br>
+                <input type="submit" value="Insertar Datos">
+        </form>
+        
+    
+    
+        
+        <h2>BÚSQUEDA</h2>
+       <form id='busqueda' method="get" action="search.php">
+                Código galáctico: <input type="text" name="galacticCode"> <br/>
+                
+                <input type="submit" value="Buscar">
+        </form>
+    
+    
+      <h2>ELIMINACIÓN</h2>
+        <form id='eliminacion' method="get" action="remove.php">
+                Código galáctico: <input type="text" name="galacticCode"> <br/>
+                
+                <input type="submit" value="Borrar">
+        </form>
+    
+
+</body>
+</html>

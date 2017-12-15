@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+  <title>Objetos compuestos de objetos</title>
+</head>
+<body>
+<script>
+
+function persona(ID, nombre,apellidos,edad,colorOjos)
+{
+this.ID = ID;
+this.nombre=nombre;
+this.apellidos=apellidos;
+this.edad=edad;
+this.colorOjos=colorOjos;
+}
+
+function automovil(matricula, marca, modelo, propietario)
+{
+this.matricula=matricula;
+this.marca=marca;
+this.modelo=modelo;
+this.propietario=propietario;
+}
+
+Juan = new persona("10123456A","Juan Manuel","Cueva Lovelle",49,"verdes");
+Rosa = new persona("09333444Q","Maria Rosa","García García",40,"marrones");
+
+laguna = new automovil("0-7777-CD","Renault","Laguna",Juan);
+ibiza  = new automovil("O-3333-BH","Seat","Ibiza",Rosa);
+
+document.write("El automovil modelo "+ laguna.modelo + " con matrícula "+ laguna.matricula + " tiene como propietario a " + laguna.propietario.nombre + "<br\>");
+document.write("El automovil modelo "+ ibiza.modelo + " con matrícula "+ ibiza.matricula + " tiene como propietario a " + ibiza.propietario.nombre + "<br\>");
+
+</script>
+<footer>
+	<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a></footer>
+</body>
+</html>

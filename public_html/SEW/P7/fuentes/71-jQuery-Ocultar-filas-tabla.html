@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Ocultar y mostrar tabla</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    table{
+        border: 1px solid red;
+    }
+    th,td{  
+        border: 1px double black;
+        text-align: center;
+    }   
+    th{ 
+        background-color: yellow;
+    }
+    footer{
+        margin-top:2em;
+    }
+    footer a img{
+        height=31px; 
+        width=88px;
+    }
+</style>
+</head>
+<body>
+<h1>jQuery: Ejemplo de ocultar y mostrar filas de una tabla</h1>
+<table>
+        <tr>
+        <th>Número</th><th>Nombre</th><th>Cantidad</th><th>Precio</th><th>Descripción</th>
+        </tr>
+        <tr>
+            <td>1</td><td>Ratón</td><td>10</td><td>100</td><td>Alta sensibilidad</td>
+        </tr>
+        <tr>
+            <td>2</td><td>Altavoz</td><td>15</td><td>990</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Hard Drive</td><td>35</td><td>3580</td><td>3 Tb</td>
+        </tr>
+        <tr>
+            <td>4</td><td>RAM</td><td>22</td><td>399</td><td>&nbsp;</td>
+        </tr>  
+        <tr>
+            <td>5</td><td>Teclado</td><td>10</td><td>3500</td><td>Inalámbrico</td>
+        </tr>
+        <tr>
+            <td>6</td><td>Router Wi-Fi</td><td>&nbsp;</td><td>3990</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>7</td><td>SSD</td><td>62</td><td>3000</td><td>512 Mb</td>
+        </tr>
+        <tr>
+            <td>8</td><td>Procesador Intel</td><td>5</td><td>7000</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>9</td><td>Audífonos</td><td>&nbsp;</td><td>350</td><td>Con eliminación de ruidos</td>
+        </tr>
+        <tr>
+            <td>10</td><td>Monitor</td><td>25</td><td>1990</td><td>&nbsp;</td>
+        </tr>
+</table>
+<br/>
+<input type="button" id="botonOcultar" Value=" Ocultar filas con elementos vacios " />
+<input type="button" id="botonMostrar" Value=" Mostrar todas las filas" />
+<script>
+$(document).ready(function() {
+    $("table td").each(function() {
+        var textoCelda = $(this).text();
+        if ($.trim(textoCelda) == '') {
+            $(this).css('background-color', 'cyan');
+        }
+    });
+
+    $('#botonOcultar').click(function() {
+        $("table tr td").each(function() {
+            var celda = $.trim($(this).text());
+            if (celda.length == 0) {
+                $(this).parent().hide();
+            }
+        });
+    });
+    $('#botonMostrar').click(function() {
+        $("table tr").each(function() {
+            $(this).show();
+        });
+    });
+});
+</script>      
+<footer>
+    <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"  /></a>
+</footer>
+</body>
+</html>

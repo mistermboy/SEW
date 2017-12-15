@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+  <title>Geolocalización</title>
+  <script>
+  function iniciar(){
+   var boton=document.getElementById('obtener'); 
+   boton.addEventListener('click', obtener);
+  }
+  function obtener(){
+   navigator.geolocation.getCurrentPosition(mostrar,errores);
+  }
+  function mostrar(posicion){
+   var ubicacion=document.getElementById('ubicacion');
+   var datos='';
+   datos+='Latitud: '+posicion.coords.latitude+' grados<br>'; 
+   datos+='Longitud: '+posicion.coords.longitude+' grados<br>'; 
+   datos+='Precisión de la latitud y longitud: '+posicion.coords.accuracy+' metros<br>';
+   datos+='Altitud: '+posicion.coords.altitude+' metros.<br>';
+   datos+='Precisión de la altitud: '+posicion.coords.altitudeAccuracy+' metros<br>'; 
+   datos+='Rumbo: '+posicion.coords.heading+' grados<br>'; 
+   datos+='Velocidad: '+posicion.coords.speed+' metros/segundo<br>';
+   ubicacion.innerHTML=datos;
+  }
+ 
+function errores(error){
+  alert('Error: '+error.code+' '+error.message);
+}
+addEventListener('load', iniciar);
+</script>
+</head>
+<body>
+  <section id="ubicacion">
+  <input type="button" id="obtener" value="Obtener mis coordenadas, altitud, rumbo y velocidad">
+  </section>
+</body>
+</html>

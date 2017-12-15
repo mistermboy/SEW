@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario con validación</title>
+<script>
+function validar() {
+
+nombreF=formulario.nombre.value;
+if (nombreF=='') {
+alert('Es obligatorio el nombre');
+event.returnValue=false;
+}
+
+apellidosF=formulario.apellidos.value;
+if (apellidosF=='') {
+alert('Es obligatorio poner apellidos');
+event.returnValue=false;
+}
+
+emailF=formulario.email.value;
+if (emailF=='') {
+alert('Es obligatorio poner e-mail');
+event.returnValue=false;
+}
+
+if (!(formulario.Sexo[0].checked || formulario.Sexo[1].checked || formulario.Sexo[2].checked)) {
+alert('El sexo es campo obligatorio');
+event.returnValue=false;
+}
+
+}
+</script>
+
+</head>
+<body>
+<form name="formulario" action="mailto:suNombre@SuDireccion.com" method="post" onSubmit="validar();">
+<p>NOMBRE</p>
+<input type="text" name="nombre">
+<p>APELLIDOS</p>
+<input type="text" name="apellidos">
+<p>e-mail</p>
+<input type="text" name="email">
+
+<p>
+<input type="radio" name="Sexo" value="Varon">Varon
+<input type="radio" name="Sexo" value="Mujer">Mujer
+<input type="radio" name="Sexo" value="Otros">Otros
+</p>
+<p><input type="submit"></p>
+</form>
+<footer>
+  <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer> 
+</body>
+</html>
+

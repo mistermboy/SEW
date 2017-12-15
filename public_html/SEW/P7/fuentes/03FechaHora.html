@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Fecha y hora</title>
+</head>
+<body>
+<script>
+var fecha = new Date();
+
+var dia=fecha.getDate();
+var mes=fecha.getMonth();
+var any=fecha.getFullYear();
+var hora = fecha.getHours();
+var minuto= fecha.getMinutes();
+var segundo=fecha.getSeconds();
+
+if (hora>5 && hora<14) 
+  document.write("<h1>Buenos días</h1>")
+else if (hora>=14 && hora <20)
+  document.write("<h1>Buenas tardes</h1>")
+else
+  document.write("<h1>Buenas noches</h1>")
+
+document.write("<h2>Fecha: "+Date()+"</h2>")
+document.write("<h3>Fecha: "+dia+" / "+(mes+1)+" / "+any+"</h3>")	
+document.write("<h3>Hora: "+hora+" : "+minuto+" : "+segundo+"</h3>")		
+</script>
+<footer>
+  <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+</footer>
+</body>
+</html>
