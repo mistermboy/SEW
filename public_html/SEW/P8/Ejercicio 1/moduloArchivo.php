@@ -34,14 +34,16 @@
                 
                 function viewFile(){
                         echo "<h3>Contenido del archivo ",$this->_fileName,": </h3>";
-                        $this->_file = fopen($this->_fileName,"r")  or die("El archivo no existe");
-                        echo "<ul>";
-                        while (!feof($this->_file)) {
-                            $_linea = fgets($this->_file); 
-                            echo "<li>" .$_linea ."</li>";
+                        if(file_exists($this->_fileName)){
+                            $this->_file = fopen($this->_fileName,"r")
+                            echo "<ul>";
+                            while (!feof($this->_file)) {
+                                $_linea = fgets($this->_file); 
+                                echo "<li>" .$_linea ."</li>";
+                            }
+                            echo "</ul>";
+                            fclose( $this->_file);
                         }
-                        echo "</ul>";
-                       fclose( $this->_file);
                 }    
                 
                 
