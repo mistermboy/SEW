@@ -10,7 +10,6 @@ h1{
 }
 
 h3{
-    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;    
     color:#333;
 }
 
@@ -35,7 +34,7 @@ li img {
 }
  
 li p {
-  font: 200 12px/1.5 Tahoma, Times New Roman, serif;
+  font: 200 12px/1.5 Tahoma, "Times New Roman", serif;
 }
  
 li {
